@@ -1,0 +1,105 @@
+C:\Users\Holvert Pérez\Documents\menu\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\menu\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\menu\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\menu\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\menu\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\base de datos\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Jeste\Desktop\base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\proyecto\Datos\obj\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Datos-1\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb

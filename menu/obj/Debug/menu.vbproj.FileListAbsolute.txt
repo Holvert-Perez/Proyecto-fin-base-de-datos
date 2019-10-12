@@ -1,0 +1,399 @@
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\bin\Debug\menu.exe.config
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\bin\Debug\menu.exe
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\bin\Debug\menu.pdb
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\bin\Debug\menu.xml
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.Form1.resources
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.Resources.resources
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.exe
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.xml
+c:\users\jeste\documents\visual studio 2015\Projects\menu\menu\obj\Debug\menu.pdb
+C:\Users\Jeste\Documents\Visual Studio 2015\Projects\menu\menu\obj\Debug\menu.Productos.resources
+C:\Users\Jeste\Documents\Visual Studio 2015\Projects\menu\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Documents\menu\menu\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Documents\menu\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\MySql.Data.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.exe
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.xml
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\menu.exe
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\menu.xml
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\MySql.Data.dll
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Jeste\Desktop\base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\MySql.Data.dll
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Documents\base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\MySql.Data.dll
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Desktop\proyecto\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\FlashControlV71.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\stdole.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Reportes.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\FlashControlV71.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\stdole.dll
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Reportes.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Jeste\Desktop\Proyecto fin base de datos-1\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Reportes.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\FlashControlV71.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\PictureBoxAbouAmmar.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\stdole.dll
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Datos-1\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\FlashControlV71.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\PictureBoxAbouAmmar.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\stdole.dll
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Reportes.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Documents\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\menu.exe
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\menu.pdb
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\menu.xml
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\Datos.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\FlashControlV71.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\stdole.dll
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.RCompras.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Reportes.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
+C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
