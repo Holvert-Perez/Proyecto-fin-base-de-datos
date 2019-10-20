@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class CLSusuario
+Imports comun
+Public Class clsusuario
     Dim conex As New Class1
 
     Public Function agregar_usuario(ByVal nombre As String, ByVal clave As String)
@@ -30,7 +31,7 @@ Public Class CLSusuario
     End Function
 
 
-    Public Function Agregar(ByVal nUsuario As String, ByVal Clave As String) As Integer
+    Public Function Obtener_usuario(ByVal nUsuario As String, ByVal Clave As String) As Integer
         Dim cm As New MySqlCommand
         Dim res As MySqlParameter
         Dim ID As Integer
@@ -64,30 +65,25 @@ Public Class CLSusuario
     End Function
 
 
-    Public Function verificar_existe() As Boolean
-        Dim respuesta As Boolean = False
+    Public Function verificar_existe()
 
         Dim Cm As New MySqlCommand("select * from usuario", conex.conexion)
         Dim DR As MySqlDataReader
-        Dim cnt As Integer = 0
 
         Try
             conex.conexion.Open()
             DR = Cm.ExecuteReader
-
             While DR.Read
-                'if (DR.getstring('nombre_usuario')
-                cnt += 1
+                usuarioactivo.iduser = DR.GetInt32(0)
+                usuarioactivo.nombre = DR.GetString(3)
+                usuarioactivo.apellido = DR.GetString(4)
+                usuarioactivo.cargo = DR.GetString(6)
+                usuarioactivo.correo = DR.GetString(5)
             End While
-
-            If cnt > 0 Then
-                Return False
-            Else
-                Return False
-            End If
+            DR.Dispose()
 
         Catch ex As Exception
-            MsgBox(ex.ToString)
+
 
         Finally
             conex.conexion.Close()
@@ -95,4 +91,5 @@ Public Class CLSusuario
         End Try
 
     End Function
+
 End Class

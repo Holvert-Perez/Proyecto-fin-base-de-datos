@@ -53,7 +53,6 @@ C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.E
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
-C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Login.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Resources.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
@@ -397,3 +396,7 @@ C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\ob
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.RVentas.resources
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Inicio_de_sesion.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.xml

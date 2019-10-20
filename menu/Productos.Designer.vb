@@ -155,8 +155,6 @@ Partial Class Productos
         Me.btnquitar.FlatAppearance.BorderSize = 0
         Me.btnquitar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnquitar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnquitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnquitar.Image = Global.menu.My.Resources.Resources.EW
         Me.btnquitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnquitar.Location = New System.Drawing.Point(500, 119)
         Me.btnquitar.Name = "btnquitar"
@@ -174,7 +172,6 @@ Partial Class Productos
         Me.btneditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btneditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btneditar.Image = Global.menu.My.Resources.Resources.icons8_lápiz_322
         Me.btneditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btneditar.Location = New System.Drawing.Point(319, 119)
         Me.btneditar.Name = "btneditar"
@@ -192,7 +189,6 @@ Partial Class Productos
         Me.btnagregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnagregar.Image = Global.menu.My.Resources.Resources.icons8_añadir_322
         Me.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnagregar.Location = New System.Drawing.Point(134, 119)
         Me.btnagregar.Name = "btnagregar"
@@ -227,7 +223,6 @@ Partial Class Productos
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.menu.My.Resources.Resources.cerrar
         Me.PictureBox1.Location = New System.Drawing.Point(811, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(22, 20)

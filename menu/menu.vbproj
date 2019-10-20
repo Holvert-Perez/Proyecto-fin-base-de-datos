@@ -129,10 +129,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="Iniciodesesion.Designer.vb">
+      <DependentUpon>Iniciodesesion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Iniciodesesion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -249,14 +249,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="Iniciodesesion.resx">
+      <DependentUpon>Iniciodesesion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoCliente.resx">
       <DependentUpon>NuevoCliente.vb</DependentUpon>
@@ -317,64 +317,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Mobile-Menu-Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon cerrar2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon maximizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon restaurar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon minimizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo pn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\producto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\venta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clientes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\compras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\venta1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pn.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\boss_man-128.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\linea.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\comun\comun.vbproj">
+      <Project>{1db45dcf-6b5a-4c6b-9822-cb4cd2c6a82a}</Project>
+      <Name>comun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Datos\Datos.vbproj">
       <Project>{3c60a150-18a3-464d-8898-85e1a148cb7d}</Project>
       <Name>Datos</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\id_cards.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Imagenes_usuario\" />
@@ -384,43 +334,7 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\kisspng-computer-icons-form-5ac276909ebe23.6909481915226937766502.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\REGISTRO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\boss_man-125.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-documento-502.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-pequeña-empresa-96.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sin título-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sa.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-tiempo-802.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sin título-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-usuario-masculino-en-círculo-filled-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EW1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-añadir-3221.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-lápiz-3221.png" />
+    <None Include="Resources\power.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

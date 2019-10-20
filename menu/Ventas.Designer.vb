@@ -46,7 +46,6 @@ Partial Class Ventas
         '
         Me.btncerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btncerrar.Image = Global.menu.My.Resources.Resources.cerrar
         Me.btncerrar.Location = New System.Drawing.Point(917, 2)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(20, 20)

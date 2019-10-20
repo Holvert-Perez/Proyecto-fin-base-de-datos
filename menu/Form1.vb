@@ -1,6 +1,7 @@
 ﻿Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Windows.Forms
+Imports comun
 Public Class Form1
 #Region "jester"
     Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -13,6 +14,24 @@ Public Class Form1
 
         'abrir imagen en picture desde almacenamiento
         'ptbusuario.Image = Image.FromFile("C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\Imagenes_usuario\usuario1.jpg")
+
+        'poner datos del usuario
+        If usuarioactivo.iduser = Nothing OrElse usuarioactivo.iduser = 0 Then
+            MessageBox.Show("No se ha iniciado sesión." + vbNewLine + "Por favor intente de nuevo.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Me.Close()
+
+        End If
+        'privilegios de usuario
+        If usuarioactivo.cargo = "Vendedor" Then
+            btnclientes.Visible = False
+            btncompras.Visible = False
+            btnImprimir.Visible = False
+            btnproveedores.Visible = False
+            btnproductos.Visible = False
+        End If
+        lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
+        lblcargo.Text = usuarioactivo.cargo
+        lblcorreo.Text = usuarioactivo.correo
     End Sub
     Private mover As Boolean
     Private Sub PanelTitulo_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelTitulo.MouseMove
@@ -36,7 +55,6 @@ Public Class Form1
             SplitContainer1.SplitterDistance = 280
             'panelmenu.Width = 50
             Labelfecha.Visible = False
-            logo2.Visible = True
             'Labelhora.Visible = False
             ToolTip1.Active = True
 
@@ -45,7 +63,6 @@ Public Class Form1
             'panelmenu.Width = 250
             SplitContainer1.SplitterDistance = 50
             Labelfecha.Visible = True
-            logo2.Visible = False
             ToolTip1.Active = False
             'Labelhora.Visible = True
         End If
@@ -109,8 +126,6 @@ Public Class Form1
 
 
     Private Sub btnsalir_Click(sender As Object, e As EventArgs)
-        'Form1.ActiveForm.Visible = False
-        Login.Show()
         Me.Close()
     End Sub
 
@@ -210,6 +225,10 @@ Public Class Form1
         'scrollraton.Y = (scrollraton.Y + 1)
 
         'Me.SplitContainer1.AutoScrollPosition = scrollraton
+    End Sub
+
+    Private Sub btnsalir_Click_1(sender As Object, e As EventArgs) Handles btnsalir.Click
+        Me.Close()
     End Sub
 
 

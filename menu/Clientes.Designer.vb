@@ -64,7 +64,6 @@ Partial Class Clientes
         Me.btnquitar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnquitar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnquitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnquitar.Image = Global.menu.My.Resources.Resources.EW
         Me.btnquitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnquitar.Location = New System.Drawing.Point(559, 148)
         Me.btnquitar.Name = "btnquitar"
@@ -84,7 +83,6 @@ Partial Class Clientes
         Me.btnnuevocliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnnuevocliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnnuevocliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnnuevocliente.Image = Global.menu.My.Resources.Resources.icons8_añadir_322
         Me.btnnuevocliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnnuevocliente.Location = New System.Drawing.Point(197, 148)
         Me.btnnuevocliente.Name = "btnnuevocliente"
@@ -104,7 +102,6 @@ Partial Class Clientes
         Me.btneditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btneditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btneditar.Image = Global.menu.My.Resources.Resources.icons8_lápiz_322
         Me.btneditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btneditar.Location = New System.Drawing.Point(379, 148)
         Me.btneditar.Name = "btneditar"
@@ -312,7 +309,6 @@ Partial Class Clientes
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.menu.My.Resources.Resources.cerrar
         Me.PictureBox1.Location = New System.Drawing.Point(880, 8)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(20, 20)

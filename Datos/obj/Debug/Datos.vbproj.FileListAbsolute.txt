@@ -103,3 +103,6 @@ C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\o
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.dll
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.xml
 C:\Users\Holvert Pérez\Desktop\Holvert Perez\Proyecto fin base de datos\Datos\obj\Debug\Datos.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\comun.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\comun.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\Datos\bin\Debug\comun.xml

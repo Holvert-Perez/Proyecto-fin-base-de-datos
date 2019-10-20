@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.panelmenu = New System.Windows.Forms.Panel()
-        Me.logo2 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btnImprimir = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
@@ -51,12 +51,14 @@ Partial Class Form1
         Me.iconrest = New System.Windows.Forms.PictureBox()
         Me.iconmaxi = New System.Windows.Forms.PictureBox()
         Me.iconce = New System.Windows.Forms.PictureBox()
+        Me.lblcargo = New System.Windows.Forms.Label()
+        Me.lblnombre = New System.Windows.Forms.Label()
+        Me.lblcorreo = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
         Me.panelmenu.SuspendLayout()
-        CType(Me.logo2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelcontenedor.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,7 +106,9 @@ Partial Class Form1
         'panelmenu
         '
         Me.panelmenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.panelmenu.Controls.Add(Me.logo2)
+        Me.panelmenu.Controls.Add(Me.lblcorreo)
+        Me.panelmenu.Controls.Add(Me.lblnombre)
+        Me.panelmenu.Controls.Add(Me.lblcargo)
         Me.panelmenu.Controls.Add(Me.Panel6)
         Me.panelmenu.Controls.Add(Me.btnImprimir)
         Me.panelmenu.Controls.Add(Me.btnsalir)
@@ -125,17 +129,6 @@ Partial Class Form1
         Me.panelmenu.Name = "panelmenu"
         Me.panelmenu.Size = New System.Drawing.Size(260, 820)
         Me.panelmenu.TabIndex = 2
-        '
-        'logo2
-        '
-        Me.logo2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.logo2.Location = New System.Drawing.Point(201, 4)
-        Me.logo2.Name = "logo2"
-        Me.logo2.Size = New System.Drawing.Size(55, 93)
-        Me.logo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.logo2.TabIndex = 13
-        Me.logo2.TabStop = False
-        Me.logo2.Visible = False
         '
         'Panel6
         '
@@ -167,21 +160,22 @@ Partial Class Form1
         Me.btnsalir.FlatAppearance.BorderSize = 0
         Me.btnsalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnsalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsalir.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnsalir.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnsalir.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.btnsalir.Location = New System.Drawing.Point(73, 105)
+        Me.btnsalir.Image = CType(resources.GetObject("btnsalir.Image"), System.Drawing.Image)
+        Me.btnsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnsalir.Location = New System.Drawing.Point(3, 109)
         Me.btnsalir.Name = "btnsalir"
         Me.btnsalir.Size = New System.Drawing.Size(122, 36)
         Me.btnsalir.TabIndex = 8
         Me.btnsalir.Text = "Cerrar Sesión"
+        Me.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnsalir.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.menu.My.Resources.Resources.boss_man_128
-        Me.PictureBox1.Location = New System.Drawing.Point(73, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(122, 104)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -354,7 +348,6 @@ Partial Class Form1
         'menu
         '
         Me.menu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.menu.Image = Global.menu.My.Resources.Resources.Mobile_Menu_Icon
         Me.menu.Location = New System.Drawing.Point(0, 0)
         Me.menu.Name = "menu"
         Me.menu.Size = New System.Drawing.Size(20, 20)
@@ -367,7 +360,6 @@ Partial Class Form1
         '
         Me.iconmini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.iconmini.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconmini.Image = Global.menu.My.Resources.Resources.icon_minimizar
         Me.iconmini.Location = New System.Drawing.Point(709, 7)
         Me.iconmini.Name = "iconmini"
         Me.iconmini.Size = New System.Drawing.Size(18, 18)
@@ -403,13 +395,39 @@ Partial Class Form1
         Me.iconce.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.iconce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.iconce.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconce.Image = Global.menu.My.Resources.Resources.icon_cerrar2
         Me.iconce.Location = New System.Drawing.Point(736, 1)
         Me.iconce.Name = "iconce"
         Me.iconce.Size = New System.Drawing.Size(18, 18)
         Me.iconce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.iconce.TabIndex = 0
         Me.iconce.TabStop = False
+        '
+        'lblcargo
+        '
+        Me.lblcargo.AutoSize = True
+        Me.lblcargo.Location = New System.Drawing.Point(146, 15)
+        Me.lblcargo.Name = "lblcargo"
+        Me.lblcargo.Size = New System.Drawing.Size(34, 13)
+        Me.lblcargo.TabIndex = 13
+        Me.lblcargo.Text = "cargo"
+        '
+        'lblnombre
+        '
+        Me.lblnombre.AutoSize = True
+        Me.lblnombre.Location = New System.Drawing.Point(146, 38)
+        Me.lblnombre.Name = "lblnombre"
+        Me.lblnombre.Size = New System.Drawing.Size(42, 13)
+        Me.lblnombre.TabIndex = 14
+        Me.lblnombre.Text = "nombre"
+        '
+        'lblcorreo
+        '
+        Me.lblcorreo.AutoSize = True
+        Me.lblcorreo.Location = New System.Drawing.Point(146, 61)
+        Me.lblcorreo.Name = "lblcorreo"
+        Me.lblcorreo.Size = New System.Drawing.Size(37, 13)
+        Me.lblcorreo.TabIndex = 15
+        Me.lblcorreo.Text = "correo"
         '
         'Form1
         '
@@ -426,7 +444,6 @@ Partial Class Form1
         Me.SplitContainer1.ResumeLayout(False)
         Me.panelmenu.ResumeLayout(False)
         Me.panelmenu.PerformLayout()
-        CType(Me.logo2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panelcontenedor.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -450,7 +467,6 @@ Partial Class Form1
     Friend WithEvents iconmaxi As PictureBox
     Friend WithEvents iconce As PictureBox
     Friend WithEvents panelmenu As Panel
-    Friend WithEvents logo2 As PictureBox
     Friend WithEvents Panel6 As Panel
     Friend WithEvents btnImprimir As Button
     Friend WithEvents btnsalir As Button
@@ -467,4 +483,7 @@ Partial Class Form1
     Friend WithEvents btnventas As Button
     Friend WithEvents btnproductos As Button
     Friend WithEvents menu As PictureBox
+    Friend WithEvents lblcorreo As Label
+    Friend WithEvents lblnombre As Label
+    Friend WithEvents lblcargo As Label
 End Class

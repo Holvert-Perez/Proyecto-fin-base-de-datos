@@ -76,7 +76,7 @@
     <Compile Include="clsnuevaventa.vb" />
     <Compile Include="clsObtenerCodigoVenta.vb" />
     <Compile Include="CLSReportes.vb" />
-    <Compile Include="CLSusuario.vb" />
+    <Compile Include="clsusuario.vb" />
     <Compile Include="editar_clientes.vb" />
     <Compile Include="FacturaContado.vb" />
     <Compile Include="guardarclientes.vb" />
@@ -118,6 +118,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\comun\comun.vbproj">
+      <Project>{1db45dcf-6b5a-4c6b-9822-cb4cd2c6a82a}</Project>
+      <Name>comun</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

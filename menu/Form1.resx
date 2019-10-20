@@ -126,6 +126,25 @@
   <metadata name="SplitContainer1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnsalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH4woUEy8Ewt76uAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJOSURBVFhH
+        vdfLyw1xHMfx4x65hrJxyZKFnXJLWYgdIooskCzsWCvJRtk9xUbZIH+ClUiKslGS5H4JKeWau/e755nT
+        d35nzpwZZ5pPver0zG++v98z87uc0xki2/EKL7HVP7SZKfiMv2M+YhJayxJknWcWorUUDWARWktrAxiH
+        6aMfc6k6gBkYP/qxflbjKf7gEiYiy6AB2PYyvPc51qBWNuILYgdxqQ0awBbEa19hzUpZAZdVLCCLZqk7
+        AH2CtUszFfeR3nwNcZ0PGoBtryJtY+1p6JsTSG+6jVmIqTIJnYA3kbY7jsLMQ/roH2AO0lQZgJmJJ4jt
+        nFtz0ZMjiA21FkVxK46T1Pc7GUXZhFhTR9GTO4iNrqAsO/EWb+DBVJZ0PtxCLj6q34iN7KCp7EesbV+5
+        ebUOsYEbyHw0lQWI9ZXbnHYhXnyHJuOW7mYU+8g94fQRPUTTeYzYxwF0sxvx4ms0nQ+IfdhnN+sRLzoH
+        ZqOpOMljfW1AN3Zmp7HBZjSVbYi15cTMxV0vNvAIbioezbG2Z0JPjiE2+oFlGDaegL8Qa59ETxYj3Yw8
+        BeMXkbrxVLyBWPM7lqIwZxEb6wxcx3XjPeeR1juNvvGUeo/0pgvwu0LVOOsvIq3jBjdwdTn7fyK9+RGc
+        zRPQLz7yPbBter+PPrf0ynIIaYHMC4xgH3aMOYhz8FrRPS7xvagV/5NvKCpYhz/hrPVfWYm7KCpcxT0s
+        x1DxnftKit5rPx48h9HoD1aX1Sqcgt+WnsGJ5Yblz/TrcIk50comakin8w/GsUTEQwmJzwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
