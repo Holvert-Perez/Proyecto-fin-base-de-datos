@@ -93,12 +93,17 @@ Public Class Inicio_de_sesion
         If y = 0 Then
             MessageBox.Show("Usuario o Contraseña incorrectos." + vbNewLine + "Por favor intente de nuevo.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-
-            Dim frm As New Form1
+            Me.Hide()
             Primer_inicio()
+            Dim frmbienvenida As New FormularioBienvenida
+
+            frmbienvenida.ShowDialog()
+            Dim frm As New Form1
+
+
             frm.Show()
             AddHandler frm.FormClosed, AddressOf Me.logout
-            Me.Hide()
+
         End If
 
 
@@ -107,7 +112,7 @@ Public Class Inicio_de_sesion
     Sub Primer_inicio()
         'verificar si exixte almenos uno
         Dim verificar As New clsusuario
-        verificar.verificar_existe()
+        verificar.verificar_existe(txtpass.Text, txtuser.Text)
 
 
 
@@ -121,6 +126,18 @@ Public Class Inicio_de_sesion
     Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
         buscarusuario()
     End Sub
+
+    Private Sub Link_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Link.LinkClicked
+        Dim frmrecuperar As New RecuperacionPass
+        Me.Hide()
+        frmrecuperar.ShowDialog()
+    End Sub
+
+    Private Sub btnagregar_Click(sender As Object, e As EventArgs) Handles btnagregar.Click
+        Registro.ShowDialog()
+    End Sub
+
+
 
 
 

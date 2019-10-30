@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Inicio_de_sesion
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Inicio_de_sesion
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ptitulo = New System.Windows.Forms.Panel()
         Me.btnmin = New System.Windows.Forms.PictureBox()
@@ -35,9 +35,17 @@ Partial Class Inicio_de_sesion
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Link = New System.Windows.Forms.LinkLabel()
         Me.btnagregar = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.ptitulo.SuspendLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ptitulo
@@ -54,20 +62,22 @@ Partial Class Inicio_de_sesion
         'btnmin
         '
         Me.btnmin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnmin.Location = New System.Drawing.Point(381, 7)
+        Me.btnmin.Image = Global.menu.My.Resources.Resources._003_minus
+        Me.btnmin.Location = New System.Drawing.Point(381, 8)
         Me.btnmin.Name = "btnmin"
-        Me.btnmin.Size = New System.Drawing.Size(20, 20)
-        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnmin.Size = New System.Drawing.Size(16, 16)
+        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.btnmin.TabIndex = 1
         Me.btnmin.TabStop = False
         '
         'btncerrar
         '
         Me.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncerrar.Image = Global.menu.My.Resources.Resources._002_delete_1
         Me.btncerrar.Location = New System.Drawing.Point(403, 4)
         Me.btncerrar.Name = "btncerrar"
-        Me.btncerrar.Size = New System.Drawing.Size(20, 20)
-        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btncerrar.Size = New System.Drawing.Size(16, 16)
+        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.btncerrar.TabIndex = 0
         Me.btncerrar.TabStop = False
         '
@@ -82,13 +92,13 @@ Partial Class Inicio_de_sesion
         '
         'txtuser
         '
-        Me.txtuser.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.txtuser.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
         Me.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtuser.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtuser.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtuser.ForeColor = System.Drawing.Color.White
-        Me.txtuser.Location = New System.Drawing.Point(47, 298)
+        Me.txtuser.Location = New System.Drawing.Point(80, 298)
         Me.txtuser.Name = "txtuser"
-        Me.txtuser.Size = New System.Drawing.Size(350, 20)
+        Me.txtuser.Size = New System.Drawing.Size(317, 30)
         Me.txtuser.TabIndex = 2
         '
         'Label1
@@ -96,7 +106,7 @@ Partial Class Inicio_de_sesion
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(43, 274)
+        Me.Label1.Location = New System.Drawing.Point(70, 274)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(158, 21)
         Me.Label1.TabIndex = 3
@@ -107,7 +117,7 @@ Partial Class Inicio_de_sesion
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(43, 336)
+        Me.Label2.Location = New System.Drawing.Point(70, 336)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(103, 21)
         Me.Label2.TabIndex = 5
@@ -115,13 +125,13 @@ Partial Class Inicio_de_sesion
         '
         'txtpass
         '
-        Me.txtpass.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.txtpass.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
         Me.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtpass.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtpass.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtpass.ForeColor = System.Drawing.Color.White
-        Me.txtpass.Location = New System.Drawing.Point(47, 360)
+        Me.txtpass.Location = New System.Drawing.Point(80, 360)
         Me.txtpass.Name = "txtpass"
-        Me.txtpass.Size = New System.Drawing.Size(350, 20)
+        Me.txtpass.Size = New System.Drawing.Size(317, 30)
         Me.txtpass.TabIndex = 4
         '
         'ckbmostrar
@@ -143,9 +153,9 @@ Partial Class Inicio_de_sesion
         Me.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnlogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnlogin.ForeColor = System.Drawing.Color.White
-        Me.btnlogin.Location = New System.Drawing.Point(47, 454)
+        Me.btnlogin.Location = New System.Drawing.Point(44, 454)
         Me.btnlogin.Name = "btnlogin"
-        Me.btnlogin.Size = New System.Drawing.Size(350, 49)
+        Me.btnlogin.Size = New System.Drawing.Size(353, 49)
         Me.btnlogin.TabIndex = 7
         Me.btnlogin.Text = "Iniciar Sesión"
         Me.btnlogin.UseVisualStyleBackColor = False
@@ -181,12 +191,60 @@ Partial Class Inicio_de_sesion
         Me.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnagregar.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnagregar.ForeColor = System.Drawing.Color.White
-        Me.btnagregar.Location = New System.Drawing.Point(47, 509)
+        Me.btnagregar.Location = New System.Drawing.Point(44, 509)
         Me.btnagregar.Name = "btnagregar"
-        Me.btnagregar.Size = New System.Drawing.Size(350, 49)
+        Me.btnagregar.Size = New System.Drawing.Size(353, 49)
         Me.btnagregar.TabIndex = 10
         Me.btnagregar.Text = "Registrarse"
         Me.btnagregar.UseVisualStyleBackColor = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.PictureBox3.Image = Global.menu.My.Resources.Resources.close_cross
+        Me.PictureBox3.Location = New System.Drawing.Point(44, 360)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 13
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 26)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.PictureBox4.Image = Global.menu.My.Resources.Resources.close_cross
+        Me.PictureBox4.Location = New System.Drawing.Point(44, 298)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 15
+        Me.PictureBox4.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.DarkGray
+        Me.Label4.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label4.Location = New System.Drawing.Point(80, 329)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(317, 1)
+        Me.Label4.TabIndex = 16
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.DarkGray
+        Me.Label5.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label5.Location = New System.Drawing.Point(80, 390)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(317, 1)
+        Me.Label5.TabIndex = 17
         '
         'Inicio_de_sesion
         '
@@ -194,6 +252,11 @@ Partial Class Inicio_de_sesion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 680)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnagregar)
         Me.Controls.Add(Me.Link)
         Me.Controls.Add(Me.Label3)
@@ -211,8 +274,12 @@ Partial Class Inicio_de_sesion
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio_de_sesion"
         Me.ptitulo.ResumeLayout(False)
+        Me.ptitulo.PerformLayout()
         CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,4 +298,9 @@ Partial Class Inicio_de_sesion
     Friend WithEvents Label3 As Label
     Friend WithEvents Link As LinkLabel
     Friend WithEvents btnagregar As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

@@ -6,8 +6,6 @@ Public Class Form1
 #Region "jester"
     Private Sub form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Login.ActiveForm.Visible = False
-        iconrest.Visible = False
-        iconmaxi.Visible = False
 
         Me.Size = Screen.PrimaryScreen.WorkingArea.Size
         Me.Location = Screen.PrimaryScreen.WorkingArea.Location
@@ -28,10 +26,35 @@ Public Class Form1
             btnImprimir.Visible = False
             btnproveedores.Visible = False
             btnproductos.Visible = False
+            btnventas.Visible = False
+            p1.Visible = False
+            p2.Visible = False
+            p3.Visible = False
+            p4.Visible = False
+            p5.Visible = False
+            p6.Visible = False
+            AbrirFormInPanel(Of RVentas)()
+            lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
+            lblcargo.Text = usuarioactivo.cargo
+            lblcorreo.Text = usuarioactivo.correo
+        ElseIf usuarioactivo.cargo = "Administrador" Then
+            btnclientes.Visible = True
+            btncompras.Visible = True
+            btnImprimir.Visible = True
+            btnproveedores.Visible = True
+            btnproductos.Visible = True
+            btnventas.Visible = True
+            p1.Visible = True
+            p2.Visible = True
+            p3.Visible = True
+            p4.Visible = True
+            p5.Visible = True
+            p6.Visible = True
+            lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
+            lblcargo.Text = usuarioactivo.cargo
+            lblcorreo.Text = usuarioactivo.correo
         End If
-        lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
-        lblcargo.Text = usuarioactivo.cargo
-        lblcorreo.Text = usuarioactivo.correo
+
     End Sub
     Private mover As Boolean
     Private Sub PanelTitulo_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelTitulo.MouseMove
@@ -66,18 +89,6 @@ Public Class Form1
             ToolTip1.Active = False
             'Labelhora.Visible = True
         End If
-    End Sub
-
-    Private Sub iconmaxi_Click(sender As Object, e As EventArgs) Handles iconmaxi.Click
-        WindowState = FormWindowState.Maximized
-        iconrest.Visible = True
-        iconmaxi.Visible = False
-    End Sub
-
-    Private Sub iconrest_Click(sender As Object, e As EventArgs) Handles iconrest.Click
-        WindowState = FormWindowState.Normal
-        iconrest.Visible = False
-        iconmaxi.Visible = True
     End Sub
 
     Private Sub iconmini_Click(sender As Object, e As EventArgs) Handles iconmini.Click
@@ -218,91 +229,13 @@ Public Class Form1
         btnImprimir.BackColor = Color.FromArgb(12, 61, 92)
     End Sub
 
-    Private Sub SplitContainer1_MouseWheel(sender As Object, e As MouseEventArgs) Handles SplitContainer1.MouseWheel
-        'Dim scrollraton As Point = Me.SplitContainer1.AutoScrollPosition
-
-        'scrollraton.X = (scrollraton.X + 1)
-        'scrollraton.Y = (scrollraton.Y + 1)
-
-        'Me.SplitContainer1.AutoScrollPosition = scrollraton
-    End Sub
-
     Private Sub btnsalir_Click_1(sender As Object, e As EventArgs) Handles btnsalir.Click
+        usuarioactivo.cargo = ""
+        usuarioactivo.apellido = ""
+        usuarioactivo.iduser = ""
+        usuarioactivo.nombre = ""
         Me.Close()
     End Sub
 
 
-#Region "ocultar scroll"
-    'Private Sub panelmenu_MouseEnter(sender As Object, e As EventArgs) Handles panelmenu.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub panelmenu_MouseLeave(sender As Object, e As EventArgs) Handles panelmenu.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btnproductos_MouseEnter(sender As Object, e As EventArgs) Handles btnproductos.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnproductos_MouseLeave(sender As Object, e As EventArgs) Handles btnproductos.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox1.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnsalir_MouseEnter(sender As Object, e As EventArgs) Handles btnsalir.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnventas_MouseEnter(sender As Object, e As EventArgs) Handles btnventas.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnclientes_MouseEnter(sender As Object, e As EventArgs) Handles btnclientes.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnproveedores_MouseEnter(sender As Object, e As EventArgs) Handles btnproveedores.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btncompras_MouseEnter(sender As Object, e As EventArgs) Handles btncompras.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnImprimir_MouseEnter(sender As Object, e As EventArgs) Handles btnImprimir.MouseEnter
-    '    SplitContainer1.Panel1.AutoScroll = False
-    'End Sub
-
-    'Private Sub btnImprimir_MouseLeave(sender As Object, e As EventArgs) Handles btnImprimir.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btncompras_MouseLeave(sender As Object, e As EventArgs) Handles btncompras.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btnproveedores_MouseLeave(sender As Object, e As EventArgs) Handles btnproveedores.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btnclientes_MouseLeave(sender As Object, e As EventArgs) Handles btnclientes.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btnventas_MouseLeave(sender As Object, e As EventArgs) Handles btnventas.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub btnsalir_MouseLeave(sender As Object, e As EventArgs) Handles btnsalir.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-
-    'Private Sub PictureBox1_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox1.MouseLeave
-    '    SplitContainer1.Panel1.AutoScroll = True
-    'End Sub
-#End Region
 End Class

@@ -7,3 +7,5 @@ C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\obj\Debug\comun
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\obj\Debug\comun.dll
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\obj\Debug\comun.xml
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\obj\Debug\comun.pdb
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\bin\Debug\CircularProgressBar.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\comun\bin\Debug\WinFormAnimation.dll

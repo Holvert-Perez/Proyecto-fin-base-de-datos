@@ -28,15 +28,18 @@ Partial Class Form1
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.panelmenu = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.lblcorreo = New System.Windows.Forms.Label()
+        Me.lblnombre = New System.Windows.Forms.Label()
+        Me.lblcargo = New System.Windows.Forms.Label()
+        Me.p1 = New System.Windows.Forms.Panel()
         Me.btnImprimir = New System.Windows.Forms.Button()
         Me.btnsalir = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.p2 = New System.Windows.Forms.Panel()
+        Me.p3 = New System.Windows.Forms.Panel()
+        Me.p5 = New System.Windows.Forms.Panel()
+        Me.p4 = New System.Windows.Forms.Panel()
+        Me.p6 = New System.Windows.Forms.Panel()
         Me.Labelfecha = New System.Windows.Forms.Label()
         Me.btncompras = New System.Windows.Forms.Button()
         Me.btnproveedores = New System.Windows.Forms.Button()
@@ -48,12 +51,7 @@ Partial Class Form1
         Me.PanelTitulo = New System.Windows.Forms.Panel()
         Me.menu = New System.Windows.Forms.PictureBox()
         Me.iconmini = New System.Windows.Forms.PictureBox()
-        Me.iconrest = New System.Windows.Forms.PictureBox()
-        Me.iconmaxi = New System.Windows.Forms.PictureBox()
         Me.iconce = New System.Windows.Forms.PictureBox()
-        Me.lblcargo = New System.Windows.Forms.Label()
-        Me.lblnombre = New System.Windows.Forms.Label()
-        Me.lblcorreo = New System.Windows.Forms.Label()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -65,8 +63,6 @@ Partial Class Form1
         Me.PanelTitulo.SuspendLayout()
         CType(Me.menu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.iconmini, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.iconrest, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.iconmaxi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.iconce, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -109,15 +105,15 @@ Partial Class Form1
         Me.panelmenu.Controls.Add(Me.lblcorreo)
         Me.panelmenu.Controls.Add(Me.lblnombre)
         Me.panelmenu.Controls.Add(Me.lblcargo)
-        Me.panelmenu.Controls.Add(Me.Panel6)
+        Me.panelmenu.Controls.Add(Me.p1)
         Me.panelmenu.Controls.Add(Me.btnImprimir)
         Me.panelmenu.Controls.Add(Me.btnsalir)
         Me.panelmenu.Controls.Add(Me.PictureBox1)
-        Me.panelmenu.Controls.Add(Me.Panel5)
-        Me.panelmenu.Controls.Add(Me.Panel3)
-        Me.panelmenu.Controls.Add(Me.Panel2)
-        Me.panelmenu.Controls.Add(Me.Panel4)
-        Me.panelmenu.Controls.Add(Me.Panel7)
+        Me.panelmenu.Controls.Add(Me.p2)
+        Me.panelmenu.Controls.Add(Me.p3)
+        Me.panelmenu.Controls.Add(Me.p5)
+        Me.panelmenu.Controls.Add(Me.p4)
+        Me.panelmenu.Controls.Add(Me.p6)
         Me.panelmenu.Controls.Add(Me.Labelfecha)
         Me.panelmenu.Controls.Add(Me.btncompras)
         Me.panelmenu.Controls.Add(Me.btnproveedores)
@@ -130,13 +126,40 @@ Partial Class Form1
         Me.panelmenu.Size = New System.Drawing.Size(260, 820)
         Me.panelmenu.TabIndex = 2
         '
-        'Panel6
+        'lblcorreo
         '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel6.Location = New System.Drawing.Point(0, 431)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(10, 50)
-        Me.Panel6.TabIndex = 11
+        Me.lblcorreo.AutoSize = True
+        Me.lblcorreo.Location = New System.Drawing.Point(146, 61)
+        Me.lblcorreo.Name = "lblcorreo"
+        Me.lblcorreo.Size = New System.Drawing.Size(37, 13)
+        Me.lblcorreo.TabIndex = 15
+        Me.lblcorreo.Text = "correo"
+        '
+        'lblnombre
+        '
+        Me.lblnombre.AutoSize = True
+        Me.lblnombre.Location = New System.Drawing.Point(146, 38)
+        Me.lblnombre.Name = "lblnombre"
+        Me.lblnombre.Size = New System.Drawing.Size(42, 13)
+        Me.lblnombre.TabIndex = 14
+        Me.lblnombre.Text = "nombre"
+        '
+        'lblcargo
+        '
+        Me.lblcargo.AutoSize = True
+        Me.lblcargo.Location = New System.Drawing.Point(146, 15)
+        Me.lblcargo.Name = "lblcargo"
+        Me.lblcargo.Size = New System.Drawing.Size(34, 13)
+        Me.lblcargo.TabIndex = 13
+        Me.lblcargo.Text = "cargo"
+        '
+        'p1
+        '
+        Me.p1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p1.Location = New System.Drawing.Point(0, 431)
+        Me.p1.Name = "p1"
+        Me.p1.Size = New System.Drawing.Size(10, 50)
+        Me.p1.TabIndex = 11
         '
         'btnImprimir
         '
@@ -182,45 +205,45 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
-        'Panel5
+        'p2
         '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel5.Location = New System.Drawing.Point(0, 375)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(10, 50)
-        Me.Panel5.TabIndex = 4
+        Me.p2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p2.Location = New System.Drawing.Point(0, 375)
+        Me.p2.Name = "p2"
+        Me.p2.Size = New System.Drawing.Size(10, 50)
+        Me.p2.TabIndex = 4
         '
-        'Panel3
+        'p3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(0, 319)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 50)
-        Me.Panel3.TabIndex = 3
+        Me.p3.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p3.Location = New System.Drawing.Point(0, 319)
+        Me.p3.Name = "p3"
+        Me.p3.Size = New System.Drawing.Size(10, 50)
+        Me.p3.TabIndex = 3
         '
-        'Panel2
+        'p5
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel2.Location = New System.Drawing.Point(0, 207)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(10, 50)
-        Me.Panel2.TabIndex = 1
+        Me.p5.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p5.Location = New System.Drawing.Point(0, 207)
+        Me.p5.Name = "p5"
+        Me.p5.Size = New System.Drawing.Size(10, 50)
+        Me.p5.TabIndex = 1
         '
-        'Panel4
+        'p4
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel4.Location = New System.Drawing.Point(0, 263)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(10, 50)
-        Me.Panel4.TabIndex = 2
+        Me.p4.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p4.Location = New System.Drawing.Point(0, 263)
+        Me.p4.Name = "p4"
+        Me.p4.Size = New System.Drawing.Size(10, 50)
+        Me.p4.TabIndex = 2
         '
-        'Panel7
+        'p6
         '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel7.Location = New System.Drawing.Point(0, 151)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(10, 50)
-        Me.Panel7.TabIndex = 0
+        Me.p6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.p6.Location = New System.Drawing.Point(0, 151)
+        Me.p6.Name = "p6"
+        Me.p6.Size = New System.Drawing.Size(10, 50)
+        Me.p6.TabIndex = 0
         '
         'Labelfecha
         '
@@ -336,8 +359,6 @@ Partial Class Form1
         Me.PanelTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.PanelTitulo.Controls.Add(Me.menu)
         Me.PanelTitulo.Controls.Add(Me.iconmini)
-        Me.PanelTitulo.Controls.Add(Me.iconrest)
-        Me.PanelTitulo.Controls.Add(Me.iconmaxi)
         Me.PanelTitulo.Controls.Add(Me.iconce)
         Me.PanelTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelTitulo.Location = New System.Drawing.Point(0, 0)
@@ -360,74 +381,26 @@ Partial Class Form1
         '
         Me.iconmini.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.iconmini.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.iconmini.Image = Global.menu.My.Resources.Resources._003_minus
         Me.iconmini.Location = New System.Drawing.Point(709, 7)
         Me.iconmini.Name = "iconmini"
-        Me.iconmini.Size = New System.Drawing.Size(18, 18)
-        Me.iconmini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.iconmini.Size = New System.Drawing.Size(16, 16)
+        Me.iconmini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.iconmini.TabIndex = 3
         Me.iconmini.TabStop = False
-        '
-        'iconrest
-        '
-        Me.iconrest.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.iconrest.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconrest.Location = New System.Drawing.Point(652, 4)
-        Me.iconrest.Name = "iconrest"
-        Me.iconrest.Size = New System.Drawing.Size(18, 18)
-        Me.iconrest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.iconrest.TabIndex = 2
-        Me.iconrest.TabStop = False
-        Me.iconrest.Visible = False
-        '
-        'iconmaxi
-        '
-        Me.iconmaxi.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.iconmaxi.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconmaxi.Location = New System.Drawing.Point(628, 4)
-        Me.iconmaxi.Name = "iconmaxi"
-        Me.iconmaxi.Size = New System.Drawing.Size(18, 18)
-        Me.iconmaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.iconmaxi.TabIndex = 1
-        Me.iconmaxi.TabStop = False
         '
         'iconce
         '
         Me.iconce.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.iconce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.iconce.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.iconce.Image = Global.menu.My.Resources.Resources._002_delete_1
         Me.iconce.Location = New System.Drawing.Point(736, 1)
         Me.iconce.Name = "iconce"
-        Me.iconce.Size = New System.Drawing.Size(18, 18)
-        Me.iconce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.iconce.Size = New System.Drawing.Size(16, 16)
+        Me.iconce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.iconce.TabIndex = 0
         Me.iconce.TabStop = False
-        '
-        'lblcargo
-        '
-        Me.lblcargo.AutoSize = True
-        Me.lblcargo.Location = New System.Drawing.Point(146, 15)
-        Me.lblcargo.Name = "lblcargo"
-        Me.lblcargo.Size = New System.Drawing.Size(34, 13)
-        Me.lblcargo.TabIndex = 13
-        Me.lblcargo.Text = "cargo"
-        '
-        'lblnombre
-        '
-        Me.lblnombre.AutoSize = True
-        Me.lblnombre.Location = New System.Drawing.Point(146, 38)
-        Me.lblnombre.Name = "lblnombre"
-        Me.lblnombre.Size = New System.Drawing.Size(42, 13)
-        Me.lblnombre.TabIndex = 14
-        Me.lblnombre.Text = "nombre"
-        '
-        'lblcorreo
-        '
-        Me.lblcorreo.AutoSize = True
-        Me.lblcorreo.Location = New System.Drawing.Point(146, 61)
-        Me.lblcorreo.Name = "lblcorreo"
-        Me.lblcorreo.Size = New System.Drawing.Size(37, 13)
-        Me.lblcorreo.TabIndex = 15
-        Me.lblcorreo.Text = "correo"
         '
         'Form1
         '
@@ -448,10 +421,9 @@ Partial Class Form1
         Me.panelcontenedor.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelTitulo.ResumeLayout(False)
+        Me.PanelTitulo.PerformLayout()
         CType(Me.menu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.iconmini, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.iconrest, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.iconmaxi, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.iconce, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -463,19 +435,17 @@ Partial Class Form1
     Friend WithEvents PictureBox4 As PictureBox
     Public WithEvents PanelTitulo As Panel
     Friend WithEvents iconmini As PictureBox
-    Friend WithEvents iconrest As PictureBox
-    Friend WithEvents iconmaxi As PictureBox
     Friend WithEvents iconce As PictureBox
     Friend WithEvents panelmenu As Panel
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents p1 As Panel
     Friend WithEvents btnImprimir As Button
     Friend WithEvents btnsalir As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents p2 As Panel
+    Friend WithEvents p3 As Panel
+    Friend WithEvents p5 As Panel
+    Friend WithEvents p4 As Panel
+    Friend WithEvents p6 As Panel
     Friend WithEvents Labelfecha As Label
     Friend WithEvents btncompras As Button
     Friend WithEvents btnproveedores As Button

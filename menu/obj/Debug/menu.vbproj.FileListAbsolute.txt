@@ -400,3 +400,8 @@ C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.I
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.dll
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.pdb
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\comun.xml
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.RecuperacionPass.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.FormularioBienvenida.resources
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\CircularProgressBar.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\WinFormAnimation.dll
+C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Registro.resources
