@@ -49,12 +49,49 @@ Public Class guardarproveedor
         End Try
 
     End Function
+    Public Function agregar_tblcorreos(ByVal pcorreos As String) As Boolean
+        Dim cm As New MySqlCommand
+        cm.Connection = conex.conexion
+        cm.CommandType = CommandType.StoredProcedure
+        cm.CommandText = "guardarcorreos"
+
+
+        cm.Parameters.AddWithValue("?pcorreos", pcorreos)
+        cm.Parameters("?pcorreos").Direction = ParameterDirection.Input
+        Try
+            conex.conexion.Open()
+            cm.ExecuteNonQuery()
+            Return True
+        Catch ex As MySqlException
+            MsgBox(ex.ToString)
+            Return False
+        End Try
+
+    End Function
 
     Public Function agregar_proveedores_telefono(ByVal pruc As String) As Boolean
         Dim cm As New MySqlCommand
         cm.Connection = conex.conexion
         cm.CommandType = CommandType.StoredProcedure
         cm.CommandText = "guardarproveedorestelefono"
+
+
+        cm.Parameters.AddWithValue("?pruc", pruc)
+        cm.Parameters("?pruc").Direction = ParameterDirection.Input
+        Try
+            conex.conexion.Open()
+            cm.ExecuteNonQuery()
+            Return True
+        Catch ex As MySqlException
+            MsgBox(ex.ToString)
+            Return False
+        End Try
+    End Function
+    Public Function agregar_proveedores_correo(ByVal pruc As String) As Boolean
+        Dim cm As New MySqlCommand
+        cm.Connection = conex.conexion
+        cm.CommandType = CommandType.StoredProcedure
+        cm.CommandText = "guardarproveedorescorreos"
 
 
         cm.Parameters.AddWithValue("?pruc", pruc)

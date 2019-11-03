@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class clseditarproducto
     Dim conex As New Class1
-    Public Function editar_tblproductos(ByVal pcodigo As String, ByVal pdescripcion As String) As Boolean
+    Public Function editar_tblproductos(ByVal pcodigo As String, ByVal pdescripcion As String, ByVal pprecio As Integer) As Boolean
         Dim cm As New MySqlCommand
         cm.Connection = conex.conexion
         cm.CommandType = CommandType.StoredProcedure
@@ -12,6 +12,9 @@ Public Class clseditarproducto
 
         cm.Parameters.AddWithValue("?pdescripcion", pdescripcion)
         cm.Parameters("?pdescripcion").Direction = ParameterDirection.Input
+
+        cm.Parameters.AddWithValue("?pprecio", pprecio)
+        cm.Parameters("?pprecio").Direction = ParameterDirection.Input
 
         Try
             conex.conexion.Open()

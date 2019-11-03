@@ -22,32 +22,27 @@ menu
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:menu.My.Resources.Resources._001_delete">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:menu.My.Resources.Resources._001_man_user">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:menu.My.Resources.Resources._002_delete_1">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:menu.My.Resources.Resources._002_padlock">
-<summary>
-  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:menu.My.Resources.Resources._003_minus">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:menu.My.Resources.Resources.close_cross">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:menu.My.Resources.Resources.eye">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:menu.My.Resources.Resources.invisible">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:menu.My.Resources.Resources.lock">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
@@ -62,7 +57,17 @@ menu
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:menu.My.Resources.Resources.productos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:menu.My.Resources.Resources.save">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:menu.My.Resources.Resources.Sin_título_1_Mesa_de_trabajo_1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

@@ -15,7 +15,7 @@ Public Class Clientes
 								                ORDER BY nombre;")
 
             DataGridView1.DataSource = llenar_grid.llenar_datagridview(sql).Tables("consulta").DefaultView
-        Catch ex As mysqlException
+        Catch ex As MySqlException
             MessageBox.Show("hjfgehgfehgd")
         End Try
 
@@ -104,7 +104,7 @@ Public Class Clientes
         End Try
     End Sub
 
-    Private Sub btnquitar_Click(sender As Object, e As EventArgs) Handles btnquitar.Click
+    Private Sub btnquitar_Click(sender As Object, e As EventArgs)
         Dim borrar As New llenarDatagrid
         Dim cliente As New identificarClienteConDeuda
         Dim cedula As String
@@ -138,55 +138,27 @@ Public Class Clientes
     End Sub
 
     Private Sub btnnuevocliente_Click(sender As Object, e As EventArgs) Handles btnnuevocliente.Click
-        Dim Agregartblclientes As New guardarclientes
-        Dim Agregartblclientestelefono As New guardarclientes
-        Dim Agregartbltelefono As New guardarclientes
-        Dim Agregartblcorreo As New guardarclientes
-        Dim Agregartblclientescorreo As New guardarclientes
-        Dim cont As Integer = txttelefono.TextLength
-
-        If txtapellido.Text = "" And txtcedula.Text = "" And txtdireccion.Text = "" And txtnombre.Text = "" Then
-            MessageBox.Show("Por favor llenar todos los datos obligatorios.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Else
-            If Agregartblclientes.agregar_tblclientes(txtcedula.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text) Then
-                If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
-                    If Agregartblclientestelefono.agregar_tblclientes_telefono(txtcedula.Text) And cont >= 8 Then
-                        If Agregartblcorreo.agregar_correos(txtemail.Text) Then
-                            If Agregartblclientescorreo.agregar_clientes_correo(txtcedula.Text) Then
-
-                                txtnombre.Text = ""
-                                txttelefono.Text = ""
-                                txtdireccion.Text = ""
-                                txtapellido.Text = ""
-                                txtcedula.Text = ""
-                                txtemail.Text = ""
-                                llenar_datosclientes()
-                                MessageBox.Show("Guardado Exitosamente")
-
-                            End If
-                        End If
-                    End If
-                End If
-            End If
-        End If
+        txtemail.Enabled = True
+        txtnombre.Enabled = True
+        txtdireccion.Enabled = True
+        txtcedula.Enabled = True
+        txttelefono.Enabled = True
+        txtapellido.Enabled = True
+        btnguardar_agregar.Visible = True
+        pndatos.Visible = True
     End Sub
 
     Private Sub btneditar_Click(sender As Object, e As EventArgs) Handles btneditar.Click
-        Dim editarcliente As New editar_clientes
-        If txtapellido.Text = "" And txtdireccion.Text = "" And txtcedula.Text = "" And txtnombre.Text = "" And txttelefono.Text = "" Then
-            MessageBox.Show("No ha selecionado ningun cliente.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Else
-            If editarcliente.editar_tblclientes(txtcedula.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text, codigo, txttelefono.Text, txtemail.Text, codigo_correo) Then
-                MessageBox.Show("Modificacion Exitosa.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                txtnombre.Text = ""
-                txttelefono.Text = ""
-                txtdireccion.Text = ""
-                txtapellido.Text = ""
-                txtcedula.Text = ""
-                txtemail.Text = ""
-                llenar_datosclientes()
-            End If
-        End If
+        btnguardar_editar.Visible = True
+
+        txtemail.Enabled = True
+        txtnombre.Enabled = True
+        txtdireccion.Enabled = True
+        txtcedula.Enabled = True
+        txttelefono.Enabled = True
+        txtapellido.Enabled = True
+        pndatos.Visible = True
+
     End Sub
 
     Private Sub txtnombre_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtnombre.KeyPress
@@ -220,6 +192,112 @@ Public Class Clientes
             e.Handled = False
         Else
             e.Handled = True
+        End If
+    End Sub
+
+    Private Sub btnguardar_editar_Click(sender As Object, e As EventArgs) Handles btnguardar_editar.Click
+        Dim editarcliente As New editar_clientes
+
+        If txtapellido.Text = "" Or txtdireccion.Text = "" Or txtcedula.Text = "" Or txtnombre.Text = "" Or txttelefono.Text = "" Then
+            MessageBox.Show("No ha selecionado ningun cliente.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            If editarcliente.editar_tblclientes(txtcedula.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text, codigo, txttelefono.Text, txtemail.Text, codigo_correo) Then
+                MessageBox.Show("Modificacion Exitosa.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                txtnombre.Text = ""
+                txttelefono.Text = ""
+                txtdireccion.Text = ""
+                txtapellido.Text = ""
+                txtcedula.Text = ""
+                txtemail.Text = ""
+                llenar_datosclientes()
+            End If
+        End If
+    End Sub
+
+    Private Sub btnguardar_agregar_Click(sender As Object, e As EventArgs) Handles btnguardar_agregar.Click
+        Dim Agregartblclientes As New guardarclientes
+        Dim Agregartblclientestelefono As New guardarclientes
+        Dim Agregartbltelefono As New guardarclientes
+        Dim Agregartblcorreo As New guardarclientes
+        Dim Agregartblclientescorreo As New guardarclientes
+        Dim cont As Integer = txttelefono.TextLength
+
+
+        If txtapellido.Text = "" Or txtcedula.Text = "" Or txtdireccion.Text = "" Or txtnombre.Text = "" Then
+            MessageBox.Show("Por favor llenar todos los datos obligatorios.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            If txttelefono.Text = "" Or txtemail.Text = "" Then
+                txttelefono.Text = "No tiene"
+                txtemail.Text = "No tiene"
+                If Agregartblclientes.agregar_tblclientes(txtcedula.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text) Then
+                    If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
+                        If Agregartblclientestelefono.agregar_tblclientes_telefono(txtcedula.Text) Then
+                            If Agregartblcorreo.agregar_correos(txtemail.Text) Then
+                                If Agregartblclientescorreo.agregar_clientes_correo(txtcedula.Text) Then
+
+                                    txtnombre.Text = ""
+                                    txttelefono.Text = ""
+                                    txtdireccion.Text = ""
+                                    txtapellido.Text = ""
+                                    txtcedula.Text = ""
+                                    txtemail.Text = ""
+
+                                    MessageBox.Show("Guardado Exitosamente")
+                                    llenar_datosclientes()
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Else
+                If cont >= 8 Then
+                    If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
+                        If Agregartblclientestelefono.agregar_tblclientes_telefono(txtcedula.Text) And cont >= 8 Then
+                            If Agregartblcorreo.agregar_correos(txtemail.Text) Then
+                                If Agregartblclientescorreo.agregar_clientes_correo(txtcedula.Text) Then
+
+                                    txtnombre.Text = ""
+                                    txttelefono.Text = ""
+                                    txtdireccion.Text = ""
+                                    txtapellido.Text = ""
+                                    txtcedula.Text = ""
+                                    txtemail.Text = ""
+
+                                    MessageBox.Show("Guardado Exitosamente")
+                                    llenar_datosclientes()
+                                End If
+                            End If
+                        End If
+                    End If
+                Else
+                    MessageBox.Show("Numero de telefono invalido")
+                End If
+
+            End If
+        End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If btnguardar_editar.Visible = True Then
+            btnguardar_editar.Visible = False
+            txtnombre.Text = ""
+            txttelefono.Text = ""
+            txtdireccion.Text = ""
+            txtapellido.Text = ""
+            txtcedula.Text = ""
+            txtemail.Text = ""
+            pndatos.Visible = False
+        ElseIf btnguardar_agregar.Visible = True
+            btnguardar_agregar.Visible = False
+            txtnombre.Text = ""
+            txttelefono.Text = ""
+            txtdireccion.Text = ""
+            txtapellido.Text = ""
+            txtcedula.Text = ""
+            txtemail.Text = ""
+            pndatos.Visible = False
+        Else
+            Me.Close()
         End If
     End Sub
 

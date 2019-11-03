@@ -18,7 +18,7 @@ Public Class CLSfactura
         Dim sql As String
 
 
-        sql = "SELECT descripcion, precio_unitario,cantidad,sub_total,fecha,cedula,nombre,apellido,direccion,codigo_venta,tipo
+        sql = "SELECT descripcion, precio_unitario,cantidad,sub_total,fecha,cedula,nombre,apellido,direccion,codigo_venta,tipo,descuento
 FROM " & Me.tablaVista & " WHERE codigo_venta='" & Me.codigo_venta & "'"
 
         Da = New MySqlDataAdapter(sql, conex.conexion)

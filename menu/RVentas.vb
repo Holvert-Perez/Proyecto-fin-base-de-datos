@@ -2,6 +2,7 @@
 
 Public Class RVentas
     Dim cedulas As String
+    Dim cod_desc As Integer
     Sub llenar_ventas()
         Dim llenar_grid As New llenarDatagrid
         Dim sql As String = ("SELECT * from ventas;")
@@ -105,6 +106,17 @@ Public Class RVentas
                         End If
                     Next
                     txttotalventa.Text += totalventa
+                    If txttotalventa.Text >= 1000 Then
+                        cod_desc = 1
+                        txtdesc.Text = txttotalventa.Text * 0.1
+                    ElseIf txttotalventa.Text >= 1500 Then
+                        cod_desc = 2
+                        txtdesc.Text = txttotalventa.Text * 0.15
+                    ElseIf txttotalventa.Text >= 2000 Then
+                        cod_desc = 3
+                        txtdesc.Text = txttotalventa.Text * 0.2
+                    End If
+                    txttotal.Text = txttotalventa.Text - txtdesc.Text
                 End If
             Else
                 If txtcedulaventas.Text = "" Then
@@ -134,6 +146,18 @@ Public Class RVentas
                             End If
                         Next
                         txttotalventa.Text += totalventa
+                        If txttotalventa.Text >= 1000 Then
+                            cod_desc = 1
+                            txtdesc.Text = txttotalventa.Text * 0.1
+                        ElseIf txttotalventa.Text >= 1500 Then
+                            cod_desc = 2
+                            txtdesc.Text = txttotalventa.Text * 0.15
+
+                        ElseIf txttotalventa.Text >= 2000 Then
+                            cod_desc = 3
+                            txtdesc.Text = txttotalventa.Text * 0.2
+                        End If
+                        txttotal.Text = txttotalventa.Text - txtdesc.Text
                     End If
                 End If
             End If
@@ -171,9 +195,6 @@ Public Class RVentas
         Dim x As String
         Dim obtener As New clseditarproducto
         Dim existencias As String
-        'fecha_pago = Date.Now.AddDays(15)
-        'x = Format(fecha_pago, "yyyy-MM-dd")
-        'MessageBox.Show(x & " 06:00:00")
 
         Dim cfilas As Integer = DataGridView1.RowCount
         If txttotalventa.Text = 0 Then
@@ -183,7 +204,7 @@ Public Class RVentas
                 dtpfecha.Value = Now
                 fecha_pago = dtpfecha.Value.Now.AddDays(15)
                 x = Format(fecha_pago, "yyyy-MM-dd")
-                If agregartblventas.agregar_tblventas(dtpfecha.Value.ToString("yyyy-MM-dd HH:mm:ss"), txttotalventa.Text, x & " 06:00:00") Then
+                If agregartblventas.agregar_tblventas(dtpfecha.Value.ToString("yyyy-MM-dd HH:mm:ss"), txttotalventa.Text, x & " 06:00:00", cod_desc) Then
                     If agregartblventasclientes.agregar_tblventasclientes(txtcedulaventas.Text) Then
                         If agregartbltipoventa.agregar_tbltipoventa(cbbtipoventa.SelectedValue) Then
                             For i As Integer = 0 To cfilas - 2
@@ -194,20 +215,24 @@ Public Class RVentas
                                 '    MessageBox.Show("Solo posee: " & existencias & " cantidades de este producto.", "Producto" & DataGridView1.Rows(i).Cells(1).Value & " insuficiente.", MessageBoxButtons.OK, MessageBoxIcon.Information)
                                 '    Exit Sub
                                 existencias -= DataGridView1.Rows(i).Cells(2).Value
-                                    obtener.Agregar_existencias(existencias, DataGridView1.Rows(i).Cells(1).Value)
+                                obtener.Agregar_existencias(existencias, DataGridView1.Rows(i).Cells(1).Value)
                                 'End If
                             Next
                             MessageBox.Show("Guardado Exitosamente")
+                            DataGridView1.DataSource = Nothing
+                            DataGridView1.Rows.Clear()
+                            cbbtipoventa.Text = ""
+                            cbmproducto.Text = ""
                             If MsgBox("Desea imprimir factura?", MsgBoxStyle.Information + MsgBoxStyle.OkCancel, "") = MsgBoxResult.Ok Then
                                 factura.ComboBox1.Visible = False
                                 factura.txt.Visible = False
 
                                 factura.ReportVentas()
-                                    factura.Show()
+                                factura.Show()
 
-                                End If
+                            End If
 
-                                Me.Show()
+                            Me.Show()
                         Else
                             MessageBox.Show("Error al registrar venta")
                         End If
@@ -217,7 +242,7 @@ Public Class RVentas
                 dtpfecha.Value = Now
                 fecha_pago = dtpfecha.Value.Now.AddDays(15)
                 x = Format(fecha_pago, "yyyy-MM-dd")
-                If agregartblventas.agregar_tblventas(dtpfecha.Value.ToString("yyyy-MM-dd HH:mm:ss"), txttotalventa.Text, x & " 06:00:00") Then
+                If agregartblventas.agregar_tblventas(dtpfecha.Value.ToString("yyyy-MM-dd HH:mm:ss"), txttotalventa.Text, x & " 06:00:000", cod_desc) Then
 
                     If agregartbltipoventa.agregar_tbltipoventa(cbbtipoventa.SelectedValue) Then
                         For i As Integer = 0 To cfilas - 2
@@ -228,13 +253,17 @@ Public Class RVentas
                             '    Exit Sub
                             'Else
                             existencias -= DataGridView1.Rows(i).Cells(2).Value
-                                obtener.Agregar_existencias(existencias, DataGridView1.Rows(i).Cells(1).Value)
+                            obtener.Agregar_existencias(existencias, DataGridView1.Rows(i).Cells(1).Value)
 
                             'End If
 
                         Next
 
                         MessageBox.Show("Guardado Exitosamente")
+                        DataGridView1.DataSource = Nothing
+                        DataGridView1.Rows.Clear()
+                        cbbtipoventa.Text = ""
+                        cbmproducto.Text = ""
                         If MsgBox("Desea imprimir factura?", MsgBoxStyle.Information + MsgBoxStyle.OkCancel, "") = MsgBoxResult.Ok Then
                             factura.ComboBox1.Visible = False
                             factura.txt.Visible = False
@@ -246,7 +275,7 @@ Public Class RVentas
                         MessageBox.Show("Error al registrar venta")
 
                     End If
-            End If
+                End If
             End If
         End If
     End Sub

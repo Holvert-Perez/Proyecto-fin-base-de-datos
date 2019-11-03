@@ -235,7 +235,6 @@ Partial Class Registro
         'btncerrar
         '
         Me.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btncerrar.Image = Global.menu.My.Resources.Resources._002_delete_1
         Me.btncerrar.Location = New System.Drawing.Point(440, 5)
         Me.btncerrar.Name = "btncerrar"
         Me.btncerrar.Size = New System.Drawing.Size(16, 16)

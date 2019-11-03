@@ -18,7 +18,7 @@ Public Class FacturaContado
         Dim sql As String
 
 
-        sql = "SELECT codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,tipo
+        sql = "SELECT codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,tipo,descuento
 From " & Me.tablaVista & " Where codigo_venta='" & codigo & "'"
 
         Da = New MySqlDataAdapter(sql, conex.conexion)

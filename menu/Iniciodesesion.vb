@@ -65,15 +65,6 @@ Public Class Inicio_de_sesion
         btnagregar.Region = New Region(buttonPath)
     End Sub
 
-    'Mostrar pass
-    Private Sub ckbmostrar_CheckedChanged(sender As Object, e As EventArgs) Handles ckbmostrar.CheckedChanged
-        If ckbmostrar.Checked = True Then
-            txtpass.UseSystemPasswordChar = False
-        Else
-            txtpass.UseSystemPasswordChar = True
-        End If
-
-    End Sub
 
     Private Sub Link_MouseEnter(sender As Object, e As EventArgs) Handles Link.MouseEnter
         Link.LinkColor = Color.DodgerBlue
@@ -135,6 +126,26 @@ Public Class Inicio_de_sesion
 
     Private Sub btnagregar_Click(sender As Object, e As EventArgs) Handles btnagregar.Click
         Registro.ShowDialog()
+    End Sub
+
+    Private Sub ptbmostrar_Click(sender As Object, e As EventArgs) Handles ptbmostrar.Click
+        txtpass.UseSystemPasswordChar = True
+        ptbmostrar.Visible = False
+        ptbnomotrar.Visible = True
+    End Sub
+
+    Private Sub ptbnomotrar_Click(sender As Object, e As EventArgs) Handles ptbnomotrar.Click
+        txtpass.UseSystemPasswordChar = False
+        ptbnomotrar.Visible = False
+        ptbmostrar.Visible = True
+    End Sub
+
+    Private Sub ptbnomotrar_MouseHover(sender As Object, e As EventArgs) Handles ptbnomotrar.MouseHover
+        Me.ttmensaje.SetToolTip(Me.ptbnomotrar, "Mostrar contraseña")
+    End Sub
+
+    Private Sub ptbmostrar_MouseHover(sender As Object, e As EventArgs) Handles ptbmostrar.MouseHover
+        Me.ttmensaje.SetToolTip(Me.ptbmostrar, "Ocultar contraseña")
     End Sub
 
 

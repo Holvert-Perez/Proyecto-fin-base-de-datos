@@ -13,6 +13,7 @@
               <xs:element name="sub_total" type="xs:int" minOccurs="0" />
               <xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
               <xs:element name="tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="descuento" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

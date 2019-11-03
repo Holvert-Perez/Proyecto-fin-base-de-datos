@@ -24,37 +24,37 @@ Partial Class Productos
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnquitar = New System.Windows.Forms.Button()
         Me.btneditar = New System.Windows.Forms.Button()
         Me.btnagregar = New System.Windows.Forms.Button()
         Me.txtprecio = New System.Windows.Forms.TextBox()
         Me.txtdescripcion = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtcodigo = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 222)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 33)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(812, 168)
+        Me.GroupBox1.Size = New System.Drawing.Size(812, 481)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Producto"
@@ -69,61 +69,56 @@ Partial Class Productos
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.Control
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 21)
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 17)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(800, 141)
+        Me.DataGridView1.Size = New System.Drawing.Size(806, 461)
         Me.DataGridView1.TabIndex = 0
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(47, 44)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 15)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Codigo:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(351, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 15)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Descripcion:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(642, 44)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(45, 15)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Precio:"
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.menu.My.Resources.Resources.close_cross
+        Me.PictureBox1.Location = New System.Drawing.Point(811, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(22, 20)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox2.Controls.Add(Me.PictureBox2)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.btnquitar)
         Me.GroupBox2.Controls.Add(Me.btneditar)
         Me.GroupBox2.Controls.Add(Me.btnagregar)
         Me.GroupBox2.Controls.Add(Me.txtprecio)
         Me.GroupBox2.Controls.Add(Me.txtdescripcion)
-        Me.GroupBox2.Controls.Add(Me.txtcodigo)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.txtcodigo)
+        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 29)
+        Me.GroupBox2.Location = New System.Drawing.Point(0, 331)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(812, 174)
-        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.Size = New System.Drawing.Size(836, 174)
+        Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos del Producto"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.menu.My.Resources.Resources.productos
+        Me.PictureBox2.Location = New System.Drawing.Point(35, 28)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(252, 127)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 29
+        Me.PictureBox2.TabStop = False
         '
         'Label5
         '
@@ -147,22 +142,6 @@ Partial Class Productos
         Me.Label4.Text = "*obligatorio"
         Me.Label4.Visible = False
         '
-        'btnquitar
-        '
-        Me.btnquitar.BackColor = System.Drawing.Color.FromArgb(CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(131, Byte), Integer))
-        Me.btnquitar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnquitar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.btnquitar.FlatAppearance.BorderSize = 0
-        Me.btnquitar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnquitar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
-        Me.btnquitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnquitar.Location = New System.Drawing.Point(500, 119)
-        Me.btnquitar.Name = "btnquitar"
-        Me.btnquitar.Size = New System.Drawing.Size(155, 34)
-        Me.btnquitar.TabIndex = 26
-        Me.btnquitar.Text = "Quitar"
-        Me.btnquitar.UseVisualStyleBackColor = False
-        '
         'btneditar
         '
         Me.btneditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(129, Byte), Integer), CType(CType(129, Byte), Integer), CType(CType(131, Byte), Integer))
@@ -173,7 +152,7 @@ Partial Class Productos
         Me.btneditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btneditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btneditar.Location = New System.Drawing.Point(319, 119)
+        Me.btneditar.Location = New System.Drawing.Point(623, 103)
         Me.btneditar.Name = "btneditar"
         Me.btneditar.Size = New System.Drawing.Size(155, 34)
         Me.btneditar.TabIndex = 25
@@ -190,7 +169,7 @@ Partial Class Productos
         Me.btnagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.btnagregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnagregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnagregar.Location = New System.Drawing.Point(134, 119)
+        Me.btnagregar.Location = New System.Drawing.Point(438, 103)
         Me.btnagregar.Name = "btnagregar"
         Me.btnagregar.Size = New System.Drawing.Size(155, 34)
         Me.btnagregar.TabIndex = 24
@@ -211,32 +190,48 @@ Partial Class Productos
         Me.txtdescripcion.Size = New System.Drawing.Size(189, 21)
         Me.txtdescripcion.TabIndex = 22
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(642, 44)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(45, 15)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Precio:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(351, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(75, 15)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Descripcion:"
+        '
         'txtcodigo
         '
-        Me.txtcodigo.Enabled = False
-        Me.txtcodigo.Location = New System.Drawing.Point(129, 39)
+        Me.txtcodigo.Location = New System.Drawing.Point(152, 57)
         Me.txtcodigo.Name = "txtcodigo"
-        Me.txtcodigo.Size = New System.Drawing.Size(189, 21)
-        Me.txtcodigo.TabIndex = 21
+        Me.txtcodigo.Size = New System.Drawing.Size(100, 21)
+        Me.txtcodigo.TabIndex = 30
+        Me.txtcodigo.Visible = False
         '
-        'PictureBox1
+        'Panel1
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Location = New System.Drawing.Point(811, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(22, 20)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(836, 27)
+        Me.Panel1.TabIndex = 4
         '
         'Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(836, 402)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(836, 505)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -244,26 +239,29 @@ Partial Class Productos
         Me.Text = "Productos"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents txtprecio As TextBox
-    Friend WithEvents txtdescripcion As TextBox
-    Friend WithEvents txtcodigo As TextBox
-    Friend WithEvents btnquitar As Button
-    Friend WithEvents btneditar As Button
-    Friend WithEvents btnagregar As Button
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents btneditar As Button
+    Friend WithEvents btnagregar As Button
+    Friend WithEvents txtprecio As TextBox
+    Friend WithEvents txtdescripcion As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtcodigo As TextBox
+    Friend WithEvents Panel1 As Panel
 End Class

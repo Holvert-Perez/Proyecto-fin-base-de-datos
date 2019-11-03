@@ -120,8 +120,9 @@ Public Class Reportes
     End Sub
 
     Private Sub Reportes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' ReportVentas()
+        'ReportVentas()
         ' ReportCompras()
+        facturacontado()
 
     End Sub
 

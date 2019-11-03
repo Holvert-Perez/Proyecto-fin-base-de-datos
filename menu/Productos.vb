@@ -30,19 +30,19 @@ Public Class Productos
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Close()
-
+        Me.Close()
     End Sub
 
-    Private Sub btneditar_Click(sender As Object, e As EventArgs) Handles btneditar.Click
+    Private Sub btneditar_Click(sender As Object, e As EventArgs)
         Dim editarproducto As New clseditarproducto
         Dim codigo As String = DataGridView1.CurrentRow.Cells(0).Value.ToString
 
         If txtcodigo.Text = "" And txtdescripcion.Text = "" Then
             MessageBox.Show("No ha selecionado ningun producto.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            If editarproducto.editar_tblproductos(txtcodigo.Text, txtdescripcion.Text) Then
+            If editarproducto.editar_tblproductos(txtcodigo.Text, txtdescripcion.Text, txtprecio.Text) Then
                 MessageBox.Show("Modificacion exitosa.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                llenar_datosproductos()
             End If
         End If
     End Sub
@@ -106,8 +106,17 @@ Public Class Productos
             e.Handled = False
         ElseIf e.KeyChar.IsSeparator(e.KeyChar) Then
             e.Handled = False
+        ElseIf e.KeyChar.Isdigit(e.KeyChar) Then
+            e.Handled = False
         Else
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub btneditar_Click_1(sender As Object, e As EventArgs) Handles btneditar.Click
+        Dim editar As New clseditarproducto
+        editar.editar_tblproductos(txtcodigo.Text, txtdescripcion.Text, txtprecio.Text)
+        MessageBox.Show("Producto editado Exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        llenar_datosproductos()
     End Sub
 End Class

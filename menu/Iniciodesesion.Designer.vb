@@ -22,30 +22,35 @@ Partial Class Inicio_de_sesion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ptitulo = New System.Windows.Forms.Panel()
-        Me.btnmin = New System.Windows.Forms.PictureBox()
-        Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtuser = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtpass = New System.Windows.Forms.TextBox()
-        Me.ckbmostrar = New System.Windows.Forms.CheckBox()
         Me.btnlogin = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Link = New System.Windows.Forms.LinkLabel()
         Me.btnagregar = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ttmensaje = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ptbnomotrar = New System.Windows.Forms.PictureBox()
+        Me.ptbmostrar = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnmin = New System.Windows.Forms.PictureBox()
+        Me.btncerrar = New System.Windows.Forms.PictureBox()
         Me.ptitulo.SuspendLayout()
-        CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbnomotrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ptbmostrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnmin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ptitulo
@@ -58,28 +63,6 @@ Partial Class Inicio_de_sesion
         Me.ptitulo.Name = "ptitulo"
         Me.ptitulo.Size = New System.Drawing.Size(430, 30)
         Me.ptitulo.TabIndex = 0
-        '
-        'btnmin
-        '
-        Me.btnmin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnmin.Image = Global.menu.My.Resources.Resources._003_minus
-        Me.btnmin.Location = New System.Drawing.Point(381, 8)
-        Me.btnmin.Name = "btnmin"
-        Me.btnmin.Size = New System.Drawing.Size(16, 16)
-        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btnmin.TabIndex = 1
-        Me.btnmin.TabStop = False
-        '
-        'btncerrar
-        '
-        Me.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btncerrar.Image = Global.menu.My.Resources.Resources._002_delete_1
-        Me.btncerrar.Location = New System.Drawing.Point(403, 4)
-        Me.btncerrar.Name = "btncerrar"
-        Me.btncerrar.Size = New System.Drawing.Size(16, 16)
-        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.btncerrar.TabIndex = 0
-        Me.btncerrar.TabStop = False
         '
         'Panel1
         '
@@ -130,21 +113,11 @@ Partial Class Inicio_de_sesion
         Me.txtpass.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtpass.ForeColor = System.Drawing.Color.White
         Me.txtpass.Location = New System.Drawing.Point(80, 360)
+        Me.txtpass.MaxLength = 12
         Me.txtpass.Name = "txtpass"
-        Me.txtpass.Size = New System.Drawing.Size(317, 30)
+        Me.txtpass.Size = New System.Drawing.Size(301, 30)
         Me.txtpass.TabIndex = 4
-        '
-        'ckbmostrar
-        '
-        Me.ckbmostrar.AutoSize = True
-        Me.ckbmostrar.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ckbmostrar.ForeColor = System.Drawing.Color.Silver
-        Me.ckbmostrar.Location = New System.Drawing.Point(47, 395)
-        Me.ckbmostrar.Name = "ckbmostrar"
-        Me.ckbmostrar.Size = New System.Drawing.Size(143, 21)
-        Me.ckbmostrar.TabIndex = 6
-        Me.ckbmostrar.Text = "Mostrar contraseña"
-        Me.ckbmostrar.UseVisualStyleBackColor = True
+        Me.txtpass.WordWrap = False
         '
         'btnlogin
         '
@@ -198,36 +171,6 @@ Partial Class Inicio_de_sesion
         Me.btnagregar.Text = "Registrarse"
         Me.btnagregar.UseVisualStyleBackColor = False
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.PictureBox3.Image = Global.menu.My.Resources.Resources.close_cross
-        Me.PictureBox3.Location = New System.Drawing.Point(44, 360)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 13
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 26)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.PictureBox4.Image = Global.menu.My.Resources.Resources.close_cross
-        Me.PictureBox4.Location = New System.Drawing.Point(44, 298)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 15
-        Me.PictureBox4.TabStop = False
-        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.DarkGray
@@ -246,12 +189,88 @@ Partial Class Inicio_de_sesion
         Me.Label5.Size = New System.Drawing.Size(317, 1)
         Me.Label5.TabIndex = 17
         '
+        'ptbnomotrar
+        '
+        Me.ptbnomotrar.Image = Global.menu.My.Resources.Resources.invisible
+        Me.ptbnomotrar.Location = New System.Drawing.Point(377, 367)
+        Me.ptbnomotrar.Name = "ptbnomotrar"
+        Me.ptbnomotrar.Size = New System.Drawing.Size(20, 20)
+        Me.ptbnomotrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ptbnomotrar.TabIndex = 19
+        Me.ptbnomotrar.TabStop = False
+        '
+        'ptbmostrar
+        '
+        Me.ptbmostrar.Image = Global.menu.My.Resources.Resources.eye
+        Me.ptbmostrar.Location = New System.Drawing.Point(377, 367)
+        Me.ptbmostrar.Name = "ptbmostrar"
+        Me.ptbmostrar.Size = New System.Drawing.Size(20, 20)
+        Me.ptbmostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ptbmostrar.TabIndex = 18
+        Me.ptbmostrar.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.PictureBox4.Image = Global.menu.My.Resources.Resources.man_user
+        Me.PictureBox4.Location = New System.Drawing.Point(44, 298)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 15
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.PictureBox3.Image = Global.menu.My.Resources.Resources.lock
+        Me.PictureBox3.Location = New System.Drawing.Point(44, 360)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 13
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.menu.My.Resources.Resources.Sin_título_1_Mesa_de_trabajo_1
+        Me.PictureBox1.Location = New System.Drawing.Point(96, 36)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(240, 240)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'btnmin
+        '
+        Me.btnmin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnmin.Image = Global.menu.My.Resources.Resources._003_minus
+        Me.btnmin.Location = New System.Drawing.Point(381, 8)
+        Me.btnmin.Name = "btnmin"
+        Me.btnmin.Size = New System.Drawing.Size(16, 16)
+        Me.btnmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.btnmin.TabIndex = 1
+        Me.btnmin.TabStop = False
+        '
+        'btncerrar
+        '
+        Me.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btncerrar.Image = Global.menu.My.Resources.Resources.close_cross
+        Me.btncerrar.Location = New System.Drawing.Point(403, 4)
+        Me.btncerrar.Name = "btncerrar"
+        Me.btncerrar.Size = New System.Drawing.Size(16, 16)
+        Me.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btncerrar.TabIndex = 0
+        Me.btncerrar.TabStop = False
+        '
         'Inicio_de_sesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(430, 680)
+        Me.Controls.Add(Me.ptbnomotrar)
+        Me.Controls.Add(Me.ptbmostrar)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox4)
@@ -261,7 +280,6 @@ Partial Class Inicio_de_sesion
         Me.Controls.Add(Me.Link)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnlogin)
-        Me.Controls.Add(Me.ckbmostrar)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtpass)
         Me.Controls.Add(Me.Label1)
@@ -275,11 +293,13 @@ Partial Class Inicio_de_sesion
         Me.Text = "Inicio_de_sesion"
         Me.ptitulo.ResumeLayout(False)
         Me.ptitulo.PerformLayout()
-        CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbnomotrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ptbmostrar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnmin, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btncerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,7 +313,6 @@ Partial Class Inicio_de_sesion
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtpass As TextBox
-    Friend WithEvents ckbmostrar As CheckBox
     Friend WithEvents btnlogin As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Link As LinkLabel
@@ -303,4 +322,7 @@ Partial Class Inicio_de_sesion
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents ptbmostrar As PictureBox
+    Friend WithEvents ptbnomotrar As PictureBox
+    Friend WithEvents ttmensaje As ToolTip
 End Class

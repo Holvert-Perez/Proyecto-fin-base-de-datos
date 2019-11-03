@@ -55,11 +55,11 @@ Partial Class FormularioBienvenida
         '
         'Timer1
         '
-        Me.Timer1.Interval = 30
+        Me.Timer1.Interval = 20
         '
         'Timer2
         '
-        Me.Timer2.Interval = 30
+        Me.Timer2.Interval = 20
         '
         'CircularProgressBar1
         '

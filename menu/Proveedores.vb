@@ -44,48 +44,13 @@ Public Class Proveedores
     End Sub
 
     Private Sub btnagregar_Click(sender As Object, e As EventArgs) Handles btnagregar.Click
-        Dim Agregartblproveedores As New guardarproveedor
-        Dim Agregartblproveedorestelefono As New guardarproveedor
-        Dim Agregartbltelefono As New guardarproveedor
-
-        If txtapellido.Text = "" And txtdireccion.Text = "" And txtnombre.Text = "" And txtruc.Text = "" Then
-            MessageBox.Show("Por favor llenar campos obligatorios.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Else
-            If Agregartblproveedores.agregar_tblproveedores(txtruc.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text) Then
-                If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
-                    If Agregartblproveedorestelefono.agregar_proveedores_telefono(txtruc.Text) Then
-
-                        llenar_datosproveedores()
-                        MessageBox.Show("Guardado Exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-                    Else
-
-                        MessageBox.Show("ha ocurrido un error al agregar Provedor", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-                    End If
-                End If
-            End If
-        End If
+        btnguardar_agregar.Visible = True
+        Panel4.Visible = True
     End Sub
 
     Private Sub btneditar_Click(sender As Object, e As EventArgs) Handles btneditar.Click
-        Dim editarproveedores As New clseditarproveedores
-
-
-        If txtapellido.Text = "" And txtdireccion.Text = "" And txtruc.Text = "" And txtnombre.Text = "" And txttelefono.Text = "" Then
-            MessageBox.Show("No ha selecionado ningun proveedor.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Else
-            If editarproveedores.editar_tblproveedores(txtruc.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text, codigo, txttelefono.Text, txtemail.Text, correos) Then
-                MessageBox.Show("Modificacion exitosa.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                txtnombre.Text = ""
-                txttelefono.Text = ""
-                txtdireccion.Text = ""
-                txtapellido.Text = ""
-                txtruc.Text = ""
-                txtemail.Text = ""
-                llenar_datosproveedores()
-            End If
-        End If
+        btnguardareditar.Visible = True
+        Panel4.Visible = True
     End Sub
 
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
@@ -147,5 +112,117 @@ Public Class Proveedores
         End If
     End Sub
 
+    Private Sub btnguardareditar_Click(sender As Object, e As EventArgs) Handles btnguardareditar.Click
+        Dim editarproveedores As New clseditarproveedores
 
+
+        If txtapellido.Text = "" And txtdireccion.Text = "" And txtruc.Text = "" And txtnombre.Text = "" And txttelefono.Text = "" Then
+            MessageBox.Show("No ha selecionado ningun proveedor.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            If editarproveedores.editar_tblproveedores(txtruc.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text, codigo, txttelefono.Text, txtemail.Text, correos) Then
+                MessageBox.Show("Modificacion exitosa.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                txtnombre.Text = ""
+                txttelefono.Text = ""
+                txtdireccion.Text = ""
+                txtapellido.Text = ""
+                txtruc.Text = ""
+                txtemail.Text = ""
+                Panel4.Visible = False
+                llenar_datosproveedores()
+            End If
+        End If
+    End Sub
+
+    Private Sub btnguardar_agregar_Click(sender As Object, e As EventArgs) Handles btnguardar_agregar.Click
+        Dim Agregartblproveedores As New guardarproveedor
+        Dim Agregartblproveedorestelefono As New guardarproveedor
+        Dim Agregartbltelefono As New guardarproveedor
+        Dim agregartblcorreos As New guardarproveedor
+        Dim agregartblporveedorescorreo As New guardarproveedor
+
+
+        If txtapellido.Text = "" Or txtdireccion.Text = "" Or txtnombre.Text = "" Or txtruc.Text = "" Then
+            MessageBox.Show("Por favor llenar campos obligatorios.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            If txtemail.Text = "" Or txttelefono.Text = "" Then
+                txttelefono.Text = "No tiene"
+                txtemail.Text = "No tiene"
+
+                If Agregartblproveedores.agregar_tblproveedores(txtruc.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text) Then
+                    If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
+                        If agregartblcorreos.agregar_tblcorreos(txtemail.Text) Then
+                            If agregartblporveedorescorreo.agregar_proveedores_correo(txtruc.Text) Then
+
+
+                                If Agregartblproveedorestelefono.agregar_proveedores_telefono(txtruc.Text) Then
+
+
+                                    MessageBox.Show("Guardado Exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                    txtnombre.Text = ""
+                                    txttelefono.Text = ""
+                                    txtdireccion.Text = ""
+                                    txtapellido.Text = ""
+                                    txtruc.Text = ""
+                                    txtemail.Text = ""
+                                    Panel4.Visible = False
+                                    llenar_datosproveedores()
+                                Else
+
+                                    MessageBox.Show("ha ocurrido un error al agregar Provedor", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            Else
+
+                If Agregartblproveedores.agregar_tblproveedores(txtruc.Text, txtnombre.Text, txtapellido.Text, txtdireccion.Text) Then
+                    If Agregartbltelefono.agregar_tbltelefonos(txttelefono.Text) Then
+                        If agregartblcorreos.agregar_tblcorreos(txtemail.Text) Then
+                            If agregartblporveedorescorreo.agregar_proveedores_correo(txtruc.Text) Then
+                                If Agregartblproveedorestelefono.agregar_proveedores_telefono(txtruc.Text) Then
+                                    MessageBox.Show("Guardado Exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                                    txtnombre.Text = ""
+                                    txttelefono.Text = ""
+                                    txtdireccion.Text = ""
+                                    txtapellido.Text = ""
+                                    txtruc.Text = ""
+                                    txtemail.Text = ""
+                                    Panel4.Visible = False
+                                    llenar_datosproveedores()
+                                Else
+                                    MessageBox.Show("ha ocurrido un error al agregar Provedor", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub btnquitar_Click(sender As Object, e As EventArgs) Handles btnquitar.Click
+        If btnguardareditar.Visible = True Then
+            txtnombre.Text = ""
+            txttelefono.Text = ""
+            txtdireccion.Text = ""
+            txtapellido.Text = ""
+            txtruc.Text = ""
+            txtemail.Text = ""
+            Panel4.Visible = False
+            btnguardareditar.Visible = False
+        ElseIf btnguardar_agregar.Visible = True
+            txtnombre.Text = ""
+            txttelefono.Text = ""
+            txtdireccion.Text = ""
+            txtapellido.Text = ""
+            txtruc.Text = ""
+            txtemail.Text = ""
+            Panel4.Visible = False
+            btnguardar_agregar.Visible = False
+        Else
+            Me.Close()
+        End If
+    End Sub
 End Class

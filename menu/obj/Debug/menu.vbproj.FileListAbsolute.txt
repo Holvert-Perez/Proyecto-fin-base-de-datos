@@ -48,8 +48,6 @@ C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\Datos.
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\bin\Debug\Datos.xml
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.vbprojResolveAssemblyReference.cache
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Clientes.resources
-C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Compras.resources
-C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarclientes.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproducto.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Editarproveedores.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Form1.resources
@@ -57,7 +55,6 @@ C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.R
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.NuevoCliente.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Productos.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Proveedores.resources
-C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.Ventas.resources
 C:\Users\Holvert Pérez\Desktop\Proyecto fin base de datos\menu\obj\Debug\menu.vbproj.GenerateResource.Cache
 C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\bin\Debug\menu.exe.config
 C:\Users\Jeste\Desktop\J3LD\Proyecto fin base de datos\Proyecto fin base de datos\menu\obj\Debug\menu.exe

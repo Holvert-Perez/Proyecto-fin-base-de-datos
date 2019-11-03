@@ -23,9 +23,9 @@ Partial Class RVentas
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.btnagregar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -36,6 +36,7 @@ Partial Class RVentas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txtcorreo = New System.Windows.Forms.TextBox()
+        Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtapellido = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -61,10 +62,14 @@ Partial Class RVentas
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.txttotal = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtdesc = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.dtpfecha = New System.Windows.Forms.DateTimePicker()
         Me.txttotalventa = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -186,6 +191,7 @@ Partial Class RVentas
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.txtcorreo)
+        Me.GroupBox3.Controls.Add(Me.dtpfecha)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.txtapellido)
         Me.GroupBox3.Controls.Add(Me.Label11)
@@ -218,6 +224,17 @@ Partial Class RVentas
         Me.txtcorreo.Name = "txtcorreo"
         Me.txtcorreo.Size = New System.Drawing.Size(208, 20)
         Me.txtcorreo.TabIndex = 12
+        '
+        'dtpfecha
+        '
+        Me.dtpfecha.Enabled = False
+        Me.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpfecha.Location = New System.Drawing.Point(945, 49)
+        Me.dtpfecha.Name = "dtpfecha"
+        Me.dtpfecha.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.dtpfecha.Size = New System.Drawing.Size(100, 20)
+        Me.dtpfecha.TabIndex = 17
+        Me.dtpfecha.Visible = False
         '
         'Label14
         '
@@ -485,7 +502,6 @@ Partial Class RVentas
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.GroupBox7)
         Me.Panel2.Controls.Add(Me.GroupBox6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
@@ -507,35 +523,104 @@ Partial Class RVentas
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Nueva Venta"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(16, 210)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 23)
-        Me.Button2.TabIndex = 18
-        Me.Button2.Text = "Eliminar registro"
-        Me.Button2.UseVisualStyleBackColor = False
-        Me.Button2.Visible = False
+        Me.Button1.Visible = False
         '
         'GroupBox7
         '
+        Me.GroupBox7.Controls.Add(Me.Label19)
+        Me.GroupBox7.Controls.Add(Me.txttotal)
+        Me.GroupBox7.Controls.Add(Me.Label20)
+        Me.GroupBox7.Controls.Add(Me.Label18)
+        Me.GroupBox7.Controls.Add(Me.txtdesc)
+        Me.GroupBox7.Controls.Add(Me.Label10)
         Me.GroupBox7.Controls.Add(Me.Label15)
-        Me.GroupBox7.Controls.Add(Me.dtpfecha)
         Me.GroupBox7.Controls.Add(Me.txttotalventa)
         Me.GroupBox7.Controls.Add(Me.Label12)
         Me.GroupBox7.Location = New System.Drawing.Point(11, 74)
         Me.GroupBox7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Padding = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.GroupBox7.Size = New System.Drawing.Size(117, 130)
+        Me.GroupBox7.Size = New System.Drawing.Size(117, 159)
         Me.GroupBox7.TabIndex = 3
         Me.GroupBox7.TabStop = False
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(5, 120)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(21, 15)
+        Me.Label19.TabIndex = 20
+        Me.Label19.Tag = "c"
+        Me.Label19.Text = "C$"
+        '
+        'txttotal
+        '
+        Me.txttotal.BackColor = System.Drawing.Color.White
+        Me.txttotal.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txttotal.Cursor = System.Windows.Forms.Cursors.No
+        Me.txttotal.Enabled = False
+        Me.txttotal.Location = New System.Drawing.Point(28, 120)
+        Me.txttotal.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.ReadOnly = True
+        Me.txttotal.Size = New System.Drawing.Size(83, 13)
+        Me.txttotal.TabIndex = 21
+        Me.txttotal.Tag = "c"
+        Me.txttotal.Text = "0"
+        Me.txttotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Century Gothic", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(11, 100)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(44, 17)
+        Me.Label20.TabIndex = 19
+        Me.Label20.Text = "Total:"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(5, 84)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(21, 15)
+        Me.Label18.TabIndex = 17
+        Me.Label18.Tag = "c"
+        Me.Label18.Text = "C$"
+        '
+        'txtdesc
+        '
+        Me.txtdesc.BackColor = System.Drawing.Color.White
+        Me.txtdesc.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtdesc.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtdesc.Enabled = False
+        Me.txtdesc.Location = New System.Drawing.Point(28, 84)
+        Me.txtdesc.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtdesc.Name = "txtdesc"
+        Me.txtdesc.ReadOnly = True
+        Me.txtdesc.Size = New System.Drawing.Size(83, 13)
+        Me.txtdesc.TabIndex = 18
+        Me.txtdesc.Tag = "c"
+        Me.txtdesc.Text = "0"
+        Me.txtdesc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Century Gothic", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(11, 64)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(84, 17)
+        Me.Label10.TabIndex = 16
+        Me.Label10.Text = "Descuento:"
         '
         'Label15
         '
@@ -546,18 +631,8 @@ Partial Class RVentas
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(21, 15)
         Me.Label15.TabIndex = 13
+        Me.Label15.Tag = "c"
         Me.Label15.Text = "C$"
-        '
-        'dtpfecha
-        '
-        Me.dtpfecha.Enabled = False
-        Me.dtpfecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpfecha.Location = New System.Drawing.Point(14, 97)
-        Me.dtpfecha.Name = "dtpfecha"
-        Me.dtpfecha.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.dtpfecha.Size = New System.Drawing.Size(100, 20)
-        Me.dtpfecha.TabIndex = 17
-        Me.dtpfecha.Visible = False
         '
         'txttotalventa
         '
@@ -571,6 +646,7 @@ Partial Class RVentas
         Me.txttotalventa.ReadOnly = True
         Me.txttotalventa.Size = New System.Drawing.Size(83, 13)
         Me.txttotalventa.TabIndex = 14
+        Me.txttotalventa.Tag = "c"
         Me.txttotalventa.Text = "0"
         Me.txttotalventa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -581,9 +657,9 @@ Partial Class RVentas
         Me.Label12.Location = New System.Drawing.Point(11, 30)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(44, 17)
+        Me.Label12.Size = New System.Drawing.Size(71, 17)
         Me.Label12.TabIndex = 15
-        Me.Label12.Text = "Total:"
+        Me.Label12.Text = "sub-total:"
         '
         'GroupBox6
         '
@@ -638,24 +714,24 @@ Partial Class RVentas
         '
         Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical
         Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column4, Me.Column3, Me.Column5, Me.Column6})
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
@@ -712,10 +788,10 @@ Partial Class RVentas
         '
         'Column6
         '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red
-        Me.Column6.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Red
+        Me.Column6.DefaultCellStyle = DataGridViewCellStyle5
         Me.Column6.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Column6.HeaderText = ""
         Me.Column6.MinimumWidth = 60
@@ -796,11 +872,16 @@ Partial Class RVentas
     Friend WithEvents btnguardar As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button2 As Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewButtonColumn
+    Friend WithEvents Label19 As Label
+    Friend WithEvents txttotal As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents txtdesc As TextBox
+    Friend WithEvents Label10 As Label
 End Class

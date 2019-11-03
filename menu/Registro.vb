@@ -36,12 +36,6 @@ Public Class Registro
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim agregar As New clsusuario
-
-        'If Me.va Then
-        'agregar.agregar_usuario(txtnuser.Text, txtpass.Text, txtnombre.Text, txtapellido.Text, txtemail.Text, cbbcargo.Text)
-        '    MessageBox.Show("Usuario Agregado Exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
-        'End If
-
         Try
             If Me.ValidateChildren And txtnuser.Text <> String.Empty And txtnombre.Text <> String.Empty And txtpass.Text <> String.Empty And txtemail.Text <> String.Empty And txtapellido.Text <> String.Empty And cbbcargo.Text <> String.Empty Then
                 agregar.agregar_usuario(txtnuser.Text, txtpass.Text, txtnombre.Text, txtapellido.Text, txtemail.Text, cbbcargo.Text)

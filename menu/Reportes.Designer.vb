@@ -25,6 +25,7 @@ Partial Class Reportes
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.txt = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.RPFacturaV1 = New menu.RPFacturaV()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -77,4 +78,5 @@ Partial Class Reportes
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Public WithEvents txt As Label
     Public WithEvents ComboBox1 As ComboBox
+    Friend WithEvents RPFacturaV1 As RPFacturaV
 End Class

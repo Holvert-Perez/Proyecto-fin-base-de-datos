@@ -36,7 +36,6 @@ Public Class Form1
             AbrirFormInPanel(Of RVentas)()
             lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
             lblcargo.Text = usuarioactivo.cargo
-            lblcorreo.Text = usuarioactivo.correo
         ElseIf usuarioactivo.cargo = "Administrador" Then
             btnclientes.Visible = True
             btncompras.Visible = True
@@ -52,7 +51,6 @@ Public Class Form1
             p6.Visible = True
             lblnombre.Text = usuarioactivo.nombre & " " & usuarioactivo.apellido
             lblcargo.Text = usuarioactivo.cargo
-            lblcorreo.Text = usuarioactivo.correo
         End If
 
     End Sub
@@ -236,6 +234,5 @@ Public Class Form1
         usuarioactivo.nombre = ""
         Me.Close()
     End Sub
-
 
 End Class

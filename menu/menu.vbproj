@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -104,18 +107,6 @@
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Clientes.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Compras.Designer.vb">
-      <DependentUpon>Compras.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Compras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Editarclientes.Designer.vb">
-      <DependentUpon>Editarclientes.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Editarclientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Editarproducto.Designer.vb">
@@ -249,22 +240,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Validaciones.vb" />
-    <Compile Include="Ventas.Designer.vb">
-      <DependentUpon>Ventas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Ventas.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Compras.resx">
-      <DependentUpon>Compras.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Editarclientes.resx">
-      <DependentUpon>Editarclientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editarproducto.resx">
       <DependentUpon>Editarproducto.vb</DependentUpon>
@@ -335,11 +314,9 @@
     <EmbeddedResource Include="RVentas.resx">
       <DependentUpon>RVentas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas.resx">
-      <DependentUpon>Ventas.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -373,19 +350,7 @@
     <None Include="Resources\power.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\001-delete.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\002-delete-1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\003-minus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\001-man-user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\002-padlock.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man-user.png" />
@@ -395,6 +360,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1_Mesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
