@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : holvert
+ Source Server         : web
  Source Server Type    : MySQL
- Source Server Version : 50511
- Source Host           : 127.0.0.1:3306
+ Source Server Version : 100137
+ Source Host           : localhost:3306
  Source Schema         : pulperianubia
 
  Target Server Type    : MySQL
- Target Server Version : 50511
+ Target Server Version : 100137
  File Encoding         : 65001
 
- Date: 24/11/2018 12:19:27
+ Date: 07/11/2019 10:37:55
 */
 
 SET NAMES utf8mb4;
@@ -33,14 +33,7 @@ CREATE TABLE `clientes_correo`  (
 -- ----------------------------
 -- Records of clientes_correo
 -- ----------------------------
-INSERT INTO `clientes_correo` VALUES (1, '1');
-INSERT INTO `clientes_correo` VALUES (20, '123-456789-0565H');
-INSERT INTO `clientes_correo` VALUES (2, '2');
-INSERT INTO `clientes_correo` VALUES (19, '534-343646-34632');
-INSERT INTO `clientes_correo` VALUES (13, 'ghjhbjhh');
-INSERT INTO `clientes_correo` VALUES (12, 'kjhgsnjln');
-INSERT INTO `clientes_correo` VALUES (15, 'q2eqweqwrq');
-INSERT INTO `clientes_correo` VALUES (11, 'vvvvvvvvvvvvv');
+INSERT INTO `clientes_correo` VALUES (35, '161-261198-0001W');
 
 -- ----------------------------
 -- Table structure for clientes_credito
@@ -57,18 +50,7 @@ CREATE TABLE `clientes_credito`  (
 -- ----------------------------
 -- Records of clientes_credito
 -- ----------------------------
-INSERT INTO `clientes_credito` VALUES ('1', 'holvert', 'perez', 'gyfyyf');
-INSERT INTO `clientes_credito` VALUES ('121-312312-4124F', 'werwerwerwewef', 'fsdfsdf', 'werwerwer');
-INSERT INTO `clientes_credito` VALUES ('122-123124-1241F', 'qwrqwrqwrqwrqwrqw', 'rfsdfsdfsf', 'wrqrqwrqwr');
-INSERT INTO `clientes_credito` VALUES ('123-456789-0565H', 'rwtesdyfgjkhljj', 'sdfghj', 'sdfg');
-INSERT INTO `clientes_credito` VALUES ('2', 'jester', 'lopez', 'jinotega');
-INSERT INTO `clientes_credito` VALUES ('223-423423-23324', 'sdfsdfsd', 'fsdfsd', 'dfsfsdfsdfs');
-INSERT INTO `clientes_credito` VALUES ('444445454', 'fatima', 'garcia', 'ocotal');
-INSERT INTO `clientes_credito` VALUES ('534-343646-34632', 'jester', 'lopez', 'jinotega');
-INSERT INTO `clientes_credito` VALUES ('ghjhbjhh', 'vhvhjh', 'vjvjgvjg', 'jgvjgvjg');
-INSERT INTO `clientes_credito` VALUES ('kjhgsnjln', 'gvgvxcjvdhfb', 'dhcvkvbh', 'cbdkbvdkj');
-INSERT INTO `clientes_credito` VALUES ('q2eqweqwrq', 'sdfsdfsd', 'fsdfsd', 'dfsfsdfsdfsw');
-INSERT INTO `clientes_credito` VALUES ('vvvvvvvvvvvvv', 'vvvvvvvvvvvvvv', 'vvvvvvvvv', 'vvvvvvvvvvv');
+INSERT INTO `clientes_credito` VALUES ('161-261198-0001W', 'Holvert', 'Josue', 'km 157 c norte, 300 m oeste, esteli');
 
 -- ----------------------------
 -- Table structure for clientes_credito_telefono
@@ -86,17 +68,7 @@ CREATE TABLE `clientes_credito_telefono`  (
 -- ----------------------------
 -- Records of clientes_credito_telefono
 -- ----------------------------
-INSERT INTO `clientes_credito_telefono` VALUES ('1', 55);
-INSERT INTO `clientes_credito_telefono` VALUES ('2', 57);
-INSERT INTO `clientes_credito_telefono` VALUES ('vvvvvvvvvvvvv', 55557);
-INSERT INTO `clientes_credito_telefono` VALUES ('kjhgsnjln', 55560);
-INSERT INTO `clientes_credito_telefono` VALUES ('ghjhbjhh', 55561);
-INSERT INTO `clientes_credito_telefono` VALUES ('q2eqweqwrq', 55563);
-INSERT INTO `clientes_credito_telefono` VALUES ('122-123124-1241F', 55564);
-INSERT INTO `clientes_credito_telefono` VALUES ('121-312312-4124F', 55565);
-INSERT INTO `clientes_credito_telefono` VALUES ('223-423423-23324', 55566);
-INSERT INTO `clientes_credito_telefono` VALUES ('534-343646-34632', 55567);
-INSERT INTO `clientes_credito_telefono` VALUES ('123-456789-0565H', 55568);
+INSERT INTO `clientes_credito_telefono` VALUES ('161-261198-0001W', 55605);
 
 -- ----------------------------
 -- Table structure for compra
@@ -106,40 +78,19 @@ CREATE TABLE `compra`  (
   `codigo_compra` int(11) NOT NULL AUTO_INCREMENT,
   `costo_total` int(11) NULL DEFAULT NULL,
   `ruc` varchar(11) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
-  `fecha_compra` datetime NULL DEFAULT NULL,
-  `fecha_pago` datetime NULL DEFAULT NULL,
+  `fecha_compra` datetime(0) NULL DEFAULT NULL,
+  `ID_Usuario` int(11) NULL DEFAULT NULL,
+  `fecha_pago` date NULL DEFAULT NULL,
   PRIMARY KEY (`codigo_compra`) USING BTREE,
   INDEX `fkcompra`(`ruc`) USING BTREE,
   CONSTRAINT `fkcompra` FOREIGN KEY (`ruc`) REFERENCES `proveedores` (`ruc`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 25180 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of compra
 -- ----------------------------
-INSERT INTO `compra` VALUES (25156, 400, '5', '2018-11-20 17:00:15', '2018-12-05 17:00:15');
-INSERT INTO `compra` VALUES (25157, 150, '5', '2018-11-22 14:10:33', '2018-12-07 14:10:33');
-INSERT INTO `compra` VALUES (25158, 70, '5', '2018-11-22 14:11:59', '2018-12-07 14:11:59');
-INSERT INTO `compra` VALUES (25159, 96, '5', '2018-11-22 14:13:14', '2018-12-07 14:13:14');
-INSERT INTO `compra` VALUES (25160, 7000, '5', '2018-11-22 14:14:53', '2018-12-07 14:14:53');
-INSERT INTO `compra` VALUES (25161, 40, '5', '2018-11-22 14:17:04', '2018-12-07 14:17:04');
-INSERT INTO `compra` VALUES (25162, 10, '5', '2018-11-22 14:17:38', '2018-12-07 14:17:38');
-INSERT INTO `compra` VALUES (25163, 10, '5', '2018-11-22 14:20:19', '2018-12-07 14:20:19');
-INSERT INTO `compra` VALUES (25164, 50, '5', '2018-11-22 14:22:00', '2018-12-07 14:22:00');
-INSERT INTO `compra` VALUES (25165, 3000, '5', '2018-11-22 14:22:58', '2018-12-07 14:22:58');
-INSERT INTO `compra` VALUES (25166, 10, '5', '2018-11-22 14:25:27', '2018-12-07 14:25:27');
-INSERT INTO `compra` VALUES (25167, 20, '5', '2018-11-22 14:26:18', '2018-12-07 14:26:18');
-INSERT INTO `compra` VALUES (25168, 50, '5', '2018-11-22 14:26:38', '2018-12-07 14:26:38');
-INSERT INTO `compra` VALUES (25169, 110, '5', '2018-11-22 14:27:29', '2018-12-07 14:27:29');
-INSERT INTO `compra` VALUES (25170, 60, '5', '2018-11-22 14:28:01', '2018-12-07 14:28:01');
-INSERT INTO `compra` VALUES (25171, 80, '5', '2018-11-22 14:28:53', '2018-12-07 14:28:53');
-INSERT INTO `compra` VALUES (25172, 120, '5', '2018-11-22 15:56:29', '2018-12-07 15:56:29');
-INSERT INTO `compra` VALUES (25173, 120, '5', '2018-11-22 15:56:41', '2018-12-07 15:56:41');
-INSERT INTO `compra` VALUES (25174, 120, '5', '2018-11-22 15:57:21', '2018-12-07 15:57:21');
-INSERT INTO `compra` VALUES (25175, 40, '5', '2018-11-22 15:59:03', '2018-12-07 15:59:03');
-INSERT INTO `compra` VALUES (25176, 70, '5', '2018-11-22 16:00:35', '2018-12-07 16:00:35');
-INSERT INTO `compra` VALUES (25177, 40, '5', '2018-11-23 17:00:50', '2018-12-08 17:00:50');
-INSERT INTO `compra` VALUES (25178, 6155, '5', '2018-11-23 17:17:27', '2018-12-08 17:17:27');
-INSERT INTO `compra` VALUES (25179, 2000, '5', '2018-11-24 12:04:29', '2018-12-09 12:04:29');
+INSERT INTO `compra` VALUES (1, 1200, 'egw5rtj6kyu', '2019-11-03 12:24:48', NULL, '2019-11-18');
+INSERT INTO `compra` VALUES (2, 90, 'egw5rtj6kyu', '2019-11-03 12:26:24', NULL, '2019-11-18');
 
 -- ----------------------------
 -- Table structure for compras_tipo
@@ -157,30 +108,8 @@ CREATE TABLE `compras_tipo`  (
 -- ----------------------------
 -- Records of compras_tipo
 -- ----------------------------
-INSERT INTO `compras_tipo` VALUES (2, 25156);
-INSERT INTO `compras_tipo` VALUES (2, 25157);
-INSERT INTO `compras_tipo` VALUES (2, 25158);
-INSERT INTO `compras_tipo` VALUES (2, 25159);
-INSERT INTO `compras_tipo` VALUES (2, 25160);
-INSERT INTO `compras_tipo` VALUES (2, 25161);
-INSERT INTO `compras_tipo` VALUES (2, 25162);
-INSERT INTO `compras_tipo` VALUES (2, 25163);
-INSERT INTO `compras_tipo` VALUES (2, 25164);
-INSERT INTO `compras_tipo` VALUES (2, 25165);
-INSERT INTO `compras_tipo` VALUES (2, 25166);
-INSERT INTO `compras_tipo` VALUES (2, 25167);
-INSERT INTO `compras_tipo` VALUES (2, 25168);
-INSERT INTO `compras_tipo` VALUES (2, 25169);
-INSERT INTO `compras_tipo` VALUES (2, 25170);
-INSERT INTO `compras_tipo` VALUES (2, 25171);
-INSERT INTO `compras_tipo` VALUES (2, 25172);
-INSERT INTO `compras_tipo` VALUES (2, 25173);
-INSERT INTO `compras_tipo` VALUES (2, 25174);
-INSERT INTO `compras_tipo` VALUES (2, 25175);
-INSERT INTO `compras_tipo` VALUES (2, 25176);
-INSERT INTO `compras_tipo` VALUES (1, 25177);
-INSERT INTO `compras_tipo` VALUES (1, 25178);
-INSERT INTO `compras_tipo` VALUES (2, 25179);
+INSERT INTO `compras_tipo` VALUES (2, 1);
+INSERT INTO `compras_tipo` VALUES (2, 2);
 
 -- ----------------------------
 -- Table structure for correos
@@ -188,36 +117,34 @@ INSERT INTO `compras_tipo` VALUES (2, 25179);
 DROP TABLE IF EXISTS `correos`;
 CREATE TABLE `correos`  (
   `codigo_correo` int(11) NOT NULL AUTO_INCREMENT,
-  `direccion_correo` longtext CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL,
-  `ID_Usuario` int(10) NULL DEFAULT NULL,
-  PRIMARY KEY (`codigo_correo`) USING BTREE,
-  INDEX `FK_Usuario`(`ID_Usuario`) USING BTREE,
-  CONSTRAINT `FK_Usuario` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 21 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+  `direccion_correo` longtext CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  PRIMARY KEY (`codigo_correo`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 36 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of correos
 -- ----------------------------
-INSERT INTO `correos` VALUES (1, 'pereshol13@gmail.com', NULL);
-INSERT INTO `correos` VALUES (2, 'loco@gmail.com', NULL);
-INSERT INTO `correos` VALUES (3, 'loco@gmail.com', NULL);
-INSERT INTO `correos` VALUES (4, 'gggggg', NULL);
-INSERT INTO `correos` VALUES (5, 'ggggg', NULL);
-INSERT INTO `correos` VALUES (6, 'dsdgjfhjk.', NULL);
-INSERT INTO `correos` VALUES (7, 'vfgnhmj,kl', NULL);
-INSERT INTO `correos` VALUES (8, 'bbb', NULL);
-INSERT INTO `correos` VALUES (9, 'vvvvvvvvvvv', NULL);
-INSERT INTO `correos` VALUES (10, 'vvvvvvvvvvv', NULL);
-INSERT INTO `correos` VALUES (11, 'bbbbbb', NULL);
-INSERT INTO `correos` VALUES (12, 'dsckb cbj ', NULL);
-INSERT INTO `correos` VALUES (13, 'gvvgjvvjh', NULL);
-INSERT INTO `correos` VALUES (14, '', NULL);
-INSERT INTO `correos` VALUES (15, 'dfsdfsdfsdsdhhdhsh', NULL);
-INSERT INTO `correos` VALUES (16, 'fswsdfwfe234', NULL);
-INSERT INTO `correos` VALUES (17, '4352', NULL);
-INSERT INTO `correos` VALUES (18, 'dfsdfsdfsdsdhhdhsh', NULL);
-INSERT INTO `correos` VALUES (19, 'loco@gmail.com', NULL);
-INSERT INTO `correos` VALUES (20, 'ewsdfchgjh', NULL);
+INSERT INTO `correos` VALUES (32, 'No tiene');
+INSERT INTO `correos` VALUES (33, 'dvfghfjgkhljñl');
+INSERT INTO `correos` VALUES (34, 'No tiene');
+INSERT INTO `correos` VALUES (35, 'pereshol13@gmail.com');
+
+-- ----------------------------
+-- Table structure for descuentos
+-- ----------------------------
+DROP TABLE IF EXISTS `descuentos`;
+CREATE TABLE `descuentos`  (
+  `id_desc` int(11) NOT NULL AUTO_INCREMENT,
+  `porcenjate` decimal(2, 2) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_desc`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of descuentos
+-- ----------------------------
+INSERT INTO `descuentos` VALUES (1, 0.10);
+INSERT INTO `descuentos` VALUES (2, 0.15);
+INSERT INTO `descuentos` VALUES (3, 0.20);
 
 -- ----------------------------
 -- Table structure for detalles_compra
@@ -235,39 +162,13 @@ CREATE TABLE `detalles_compra`  (
   INDEX `fkproductodetalles`(`codigo_producto`) USING BTREE,
   CONSTRAINT `fkdetallescompra` FOREIGN KEY (`codigo_compra`) REFERENCES `compra` (`codigo_compra`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `fkproductodetalles` FOREIGN KEY (`codigo_producto`) REFERENCES `producto` (`codigo_producto`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 38 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of detalles_compra
 -- ----------------------------
-INSERT INTO `detalles_compra` VALUES (10, 100, 2, 200, 25156, 2);
-INSERT INTO `detalles_compra` VALUES (11, 100, 2, 200, 25156, 2);
-INSERT INTO `detalles_compra` VALUES (12, 15, 10, 150, 25157, 2);
-INSERT INTO `detalles_compra` VALUES (13, 7, 10, 70, 25158, 4);
-INSERT INTO `detalles_compra` VALUES (14, 6, 16, 96, 25159, 2);
-INSERT INTO `detalles_compra` VALUES (15, 7, 10, 70, 25160, 2);
-INSERT INTO `detalles_compra` VALUES (16, 4, 10, 40, 25161, 2);
-INSERT INTO `detalles_compra` VALUES (17, 1, 10, 10, 25162, 2);
-INSERT INTO `detalles_compra` VALUES (18, 1, 10, 10, 25163, 2);
-INSERT INTO `detalles_compra` VALUES (19, 10, 5, 50, 25164, 2);
-INSERT INTO `detalles_compra` VALUES (20, 1000, 3, 3000, 25165, 2);
-INSERT INTO `detalles_compra` VALUES (21, 10, 1, 10, 25166, 2);
-INSERT INTO `detalles_compra` VALUES (22, 10, 2, 20, 25167, 2);
-INSERT INTO `detalles_compra` VALUES (23, 10, 2, 20, 25168, 2);
-INSERT INTO `detalles_compra` VALUES (24, 10, 3, 30, 25168, 2);
-INSERT INTO `detalles_compra` VALUES (25, 10, 11, 110, 25169, 2);
-INSERT INTO `detalles_compra` VALUES (26, 10, 6, 60, 25170, 2);
-INSERT INTO `detalles_compra` VALUES (27, 10, 8, 80, 25171, 2);
-INSERT INTO `detalles_compra` VALUES (28, 10, 12, 120, 25172, 2);
-INSERT INTO `detalles_compra` VALUES (29, 10, 12, 120, 25173, 2);
-INSERT INTO `detalles_compra` VALUES (30, 10, 12, 120, 25174, 2);
-INSERT INTO `detalles_compra` VALUES (31, 10, 2, 20, 25175, 4);
-INSERT INTO `detalles_compra` VALUES (32, 10, 2, 20, 25175, 5);
-INSERT INTO `detalles_compra` VALUES (33, 10, 4, 40, 25176, 4);
-INSERT INTO `detalles_compra` VALUES (34, 10, 3, 30, 25176, 5);
-INSERT INTO `detalles_compra` VALUES (35, 8, 5, 40, 25177, 5);
-INSERT INTO `detalles_compra` VALUES (36, 1231, 5, 6155, 25178, 4);
-INSERT INTO `detalles_compra` VALUES (37, 100, 20, 2000, 25179, 4);
+INSERT INTO `detalles_compra` VALUES (1, 12, 100, 1200, 1, NULL);
+INSERT INTO `detalles_compra` VALUES (2, 10, 9, 90, 2, 1);
 
 -- ----------------------------
 -- Table structure for detalles_de_venta
@@ -284,105 +185,23 @@ CREATE TABLE `detalles_de_venta`  (
   INDEX `fkventadetalles`(`codigo_venta`) USING BTREE,
   CONSTRAINT `fkproductoventa` FOREIGN KEY (`codigo_producto`) REFERENCES `producto` (`codigo_producto`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `fkventadetalles` FOREIGN KEY (`codigo_venta`) REFERENCES `ventas` (`codigo_venta`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 109 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of detalles_de_venta
 -- ----------------------------
-INSERT INTO `detalles_de_venta` VALUES (15, 48, 2, 3, 31557);
-INSERT INTO `detalles_de_venta` VALUES (16, 32, 2, 2, 45558);
-INSERT INTO `detalles_de_venta` VALUES (17, 32, 2, 2, 96488);
-INSERT INTO `detalles_de_venta` VALUES (18, 32, 2, 2, 96489);
-INSERT INTO `detalles_de_venta` VALUES (19, 48, 2, 3, 96490);
-INSERT INTO `detalles_de_venta` VALUES (20, 45, 1, 3, 96491);
-INSERT INTO `detalles_de_venta` VALUES (21, 32, 2, 2, 96492);
-INSERT INTO `detalles_de_venta` VALUES (22, 64, 2, 4, 96492);
-INSERT INTO `detalles_de_venta` VALUES (23, 60, 1, 4, 96492);
-INSERT INTO `detalles_de_venta` VALUES (24, 75, 1, 5, 96492);
-INSERT INTO `detalles_de_venta` VALUES (25, 32, 2, 2, 96493);
-INSERT INTO `detalles_de_venta` VALUES (26, 64, 2, 4, 96493);
-INSERT INTO `detalles_de_venta` VALUES (27, 60, 1, 4, 96493);
-INSERT INTO `detalles_de_venta` VALUES (28, 75, 1, 5, 96493);
-INSERT INTO `detalles_de_venta` VALUES (29, 32, 2, 2, 96494);
-INSERT INTO `detalles_de_venta` VALUES (30, 32, 2, 2, 96494);
-INSERT INTO `detalles_de_venta` VALUES (31, 48, 2, 3, 96494);
-INSERT INTO `detalles_de_venta` VALUES (32, 32, 2, 2, 96494);
-INSERT INTO `detalles_de_venta` VALUES (33, 48, 2, 3, 96494);
-INSERT INTO `detalles_de_venta` VALUES (34, 64, 2, 4, 96494);
-INSERT INTO `detalles_de_venta` VALUES (35, 48, 2, 3, 96494);
-INSERT INTO `detalles_de_venta` VALUES (36, 64, 2, 4, 96494);
-INSERT INTO `detalles_de_venta` VALUES (37, 48, 2, 3, 96494);
-INSERT INTO `detalles_de_venta` VALUES (38, 16, 2, 1, 96495);
-INSERT INTO `detalles_de_venta` VALUES (39, 32, 2, 2, 96496);
-INSERT INTO `detalles_de_venta` VALUES (40, 32, 2, 2, 96497);
-INSERT INTO `detalles_de_venta` VALUES (41, 32, 2, 2, 96498);
-INSERT INTO `detalles_de_venta` VALUES (42, 48, 2, 3, 96498);
-INSERT INTO `detalles_de_venta` VALUES (43, 48, 2, 3, 96498);
-INSERT INTO `detalles_de_venta` VALUES (44, 48, 2, 3, 96498);
-INSERT INTO `detalles_de_venta` VALUES (45, 48, 2, 3, 96498);
-INSERT INTO `detalles_de_venta` VALUES (46, 48, 2, 3, 96498);
-INSERT INTO `detalles_de_venta` VALUES (47, 32, 2, 2, 96499);
-INSERT INTO `detalles_de_venta` VALUES (48, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (49, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (50, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (51, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (52, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (53, 48, 2, 3, 96499);
-INSERT INTO `detalles_de_venta` VALUES (54, 64, 2, 4, 96499);
-INSERT INTO `detalles_de_venta` VALUES (55, 64, 2, 4, 96499);
-INSERT INTO `detalles_de_venta` VALUES (56, 64, 2, 4, 96499);
-INSERT INTO `detalles_de_venta` VALUES (57, 64, 2, 4, 96499);
-INSERT INTO `detalles_de_venta` VALUES (58, 80, 2, 5, 96499);
-INSERT INTO `detalles_de_venta` VALUES (59, 96, 2, 6, 96499);
-INSERT INTO `detalles_de_venta` VALUES (60, 64, 2, 4, 96499);
-INSERT INTO `detalles_de_venta` VALUES (61, 192, 2, 12, 96499);
-INSERT INTO `detalles_de_venta` VALUES (62, 176, 2, 11, 96499);
-INSERT INTO `detalles_de_venta` VALUES (63, 160, 2, 10, 96499);
-INSERT INTO `detalles_de_venta` VALUES (64, 144, 2, 9, 96499);
-INSERT INTO `detalles_de_venta` VALUES (65, 112, 2, 7, 96499);
-INSERT INTO `detalles_de_venta` VALUES (66, 128, 2, 8, 96499);
-INSERT INTO `detalles_de_venta` VALUES (67, 64, 2, 4, 96500);
-INSERT INTO `detalles_de_venta` VALUES (68, 48, 2, 3, 96501);
-INSERT INTO `detalles_de_venta` VALUES (69, 64, 2, 4, 96502);
-INSERT INTO `detalles_de_venta` VALUES (70, 48, 2, 3, 96502);
-INSERT INTO `detalles_de_venta` VALUES (71, 48, 2, 3, 96502);
-INSERT INTO `detalles_de_venta` VALUES (72, 48, 2, 3, 96502);
-INSERT INTO `detalles_de_venta` VALUES (73, 48, 2, 3, 96502);
-INSERT INTO `detalles_de_venta` VALUES (74, 32, 2, 2, 96502);
-INSERT INTO `detalles_de_venta` VALUES (75, 48, 2, 3, 96502);
-INSERT INTO `detalles_de_venta` VALUES (76, 32, 2, 2, 96503);
-INSERT INTO `detalles_de_venta` VALUES (77, 32, 2, 2, 96504);
-INSERT INTO `detalles_de_venta` VALUES (78, 160, 2, 10, 96505);
-INSERT INTO `detalles_de_venta` VALUES (79, 160, 2, 10, 96506);
-INSERT INTO `detalles_de_venta` VALUES (80, 160, 1, 10, 96507);
-INSERT INTO `detalles_de_venta` VALUES (81, 160, 2, 10, 96508);
-INSERT INTO `detalles_de_venta` VALUES (82, 160, 2, 10, 96509);
-INSERT INTO `detalles_de_venta` VALUES (83, 60, 1, 4, 96510);
-INSERT INTO `detalles_de_venta` VALUES (84, 45, 1, 3, 96511);
-INSERT INTO `detalles_de_venta` VALUES (85, 60, 1, 4, 96512);
-INSERT INTO `detalles_de_venta` VALUES (86, 60, 1, 4, 96513);
-INSERT INTO `detalles_de_venta` VALUES (87, 60, 1, 4, 96514);
-INSERT INTO `detalles_de_venta` VALUES (88, 60, 1, 4, 96515);
-INSERT INTO `detalles_de_venta` VALUES (89, 60, 1, 4, 96516);
-INSERT INTO `detalles_de_venta` VALUES (90, 60, 1, 4, 96517);
-INSERT INTO `detalles_de_venta` VALUES (91, 60, 1, 4, 96518);
-INSERT INTO `detalles_de_venta` VALUES (92, 60, 1, 4, 96519);
-INSERT INTO `detalles_de_venta` VALUES (93, 10, 4, 1, 96520);
-INSERT INTO `detalles_de_venta` VALUES (94, 60, 1, 4, 96521);
-INSERT INTO `detalles_de_venta` VALUES (95, 60, 1, 4, 96522);
-INSERT INTO `detalles_de_venta` VALUES (96, 30, 4, 3, 96523);
-INSERT INTO `detalles_de_venta` VALUES (97, 30, 4, 3, 96525);
-INSERT INTO `detalles_de_venta` VALUES (98, 110, 4, 11, 96526);
-INSERT INTO `detalles_de_venta` VALUES (99, 110, 5, 11, 96527);
-INSERT INTO `detalles_de_venta` VALUES (100, 30, 5, 3, 96528);
-INSERT INTO `detalles_de_venta` VALUES (101, 10, 5, 1, 96529);
-INSERT INTO `detalles_de_venta` VALUES (102, 48, 2, 3, 96530);
-INSERT INTO `detalles_de_venta` VALUES (103, 40, 4, 4, 96533);
-INSERT INTO `detalles_de_venta` VALUES (104, 64, 2, 4, 96534);
-INSERT INTO `detalles_de_venta` VALUES (105, 30, 5, 3, 96535);
-INSERT INTO `detalles_de_venta` VALUES (106, 40, 5, 4, 96536);
-INSERT INTO `detalles_de_venta` VALUES (107, 100, 4, 10, 96537);
-INSERT INTO `detalles_de_venta` VALUES (108, 20, 5, 2, 96539);
+INSERT INTO `detalles_de_venta` VALUES (1, 1000, 1, 1, 1);
+INSERT INTO `detalles_de_venta` VALUES (2, 1000, 1, 1, 2);
+INSERT INTO `detalles_de_venta` VALUES (3, 1000, 1, 1, 3);
+INSERT INTO `detalles_de_venta` VALUES (4, 1000, 1, 1, 4);
+INSERT INTO `detalles_de_venta` VALUES (5, 1000, 1, 1, 5);
+INSERT INTO `detalles_de_venta` VALUES (6, 1000, 1, 1, 6);
+INSERT INTO `detalles_de_venta` VALUES (7, 1000, 1, 1, 7);
+INSERT INTO `detalles_de_venta` VALUES (8, 1000, 1, 1, 8);
+INSERT INTO `detalles_de_venta` VALUES (9, 1000, 1, 1, 9);
+INSERT INTO `detalles_de_venta` VALUES (10, 1000, 1, 1, 10);
+INSERT INTO `detalles_de_venta` VALUES (11, 1000, 1, 1, 10);
+INSERT INTO `detalles_de_venta` VALUES (12, 1000, 1, 1, 10);
 
 -- ----------------------------
 -- Table structure for producto
@@ -394,19 +213,12 @@ CREATE TABLE `producto`  (
   `precio_unitario` int(11) NULL DEFAULT NULL,
   `cantidad_existente` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`codigo_producto`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of producto
 -- ----------------------------
-INSERT INTO `producto` VALUES (1, 'arroz', 15, 0);
-INSERT INTO `producto` VALUES (2, 'frijoles', 16, 0);
-INSERT INTO `producto` VALUES (4, 'aceite', 10, 5);
-INSERT INTO `producto` VALUES (5, 'gaseosa', 10, 1);
-INSERT INTO `producto` VALUES (8, 'maseca', 10, 0);
-INSERT INTO `producto` VALUES (9, 'avena', 6, 0);
-INSERT INTO `producto` VALUES (10, 'Azucar', 15, 0);
-INSERT INTO `producto` VALUES (11, 'pasta', 15, 0);
+INSERT INTO `producto` VALUES (1, 'arroz', 1000, 997);
 
 -- ----------------------------
 -- Table structure for proveedores
@@ -423,7 +235,11 @@ CREATE TABLE `proveedores`  (
 -- ----------------------------
 -- Records of proveedores
 -- ----------------------------
-INSERT INTO `proveedores` VALUES ('5', 'ihbkhbh', 'hbbbhbh', 'bbbb');
+INSERT INTO `proveedores` VALUES ('egw5rtj6kyu', 'ertrytuyliuoipo', 'esrdtfyguiop', 'rtyuyiuop');
+INSERT INTO `proveedores` VALUES ('ertryuyi', 'ertyuijl', 'ertyguijkñ', 'ertyui');
+INSERT INTO `proveedores` VALUES ('esgrdhtfjyg', 'dfgj', 'drftgyhjk', 'dfghjk');
+INSERT INTO `proveedores` VALUES ('ghjgkh', 'frthyjukio', 'rtyuiul', 'tryui');
+INSERT INTO `proveedores` VALUES ('rtnymut,iy.', 'frthyjukio', 'rtyuiul', 'tryui');
 
 -- ----------------------------
 -- Table structure for proveedores_correo
@@ -441,8 +257,9 @@ CREATE TABLE `proveedores_correo`  (
 -- ----------------------------
 -- Records of proveedores_correo
 -- ----------------------------
-INSERT INTO `proveedores_correo` VALUES ('5', 3);
-INSERT INTO `proveedores_correo` VALUES ('5', 6);
+INSERT INTO `proveedores_correo` VALUES ('egw5rtj6kyu', 34);
+INSERT INTO `proveedores_correo` VALUES ('ghjgkh', 32);
+INSERT INTO `proveedores_correo` VALUES ('rtnymut,iy.', 33);
 
 -- ----------------------------
 -- Table structure for proveedores_telefono
@@ -460,7 +277,11 @@ CREATE TABLE `proveedores_telefono`  (
 -- ----------------------------
 -- Records of proveedores_telefono
 -- ----------------------------
-INSERT INTO `proveedores_telefono` VALUES ('5', 59);
+INSERT INTO `proveedores_telefono` VALUES ('egw5rtj6kyu', 55604);
+INSERT INTO `proveedores_telefono` VALUES ('ertryuyi', 55601);
+INSERT INTO `proveedores_telefono` VALUES ('esgrdhtfjyg', 55600);
+INSERT INTO `proveedores_telefono` VALUES ('ghjgkh', 55602);
+INSERT INTO `proveedores_telefono` VALUES ('rtnymut,iy.', 55603);
 
 -- ----------------------------
 -- Table structure for telefonos
@@ -470,24 +291,17 @@ CREATE TABLE `telefonos`  (
   `codigo_telefono` int(11) NOT NULL AUTO_INCREMENT,
   `numero_telefono` varchar(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   PRIMARY KEY (`codigo_telefono`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 55569 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 55606 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of telefonos
 -- ----------------------------
-INSERT INTO `telefonos` VALUES (55, '57447776');
-INSERT INTO `telefonos` VALUES (57, '54878969');
-INSERT INTO `telefonos` VALUES (59, 'hjjhjf');
-INSERT INTO `telefonos` VALUES (60, '464545654546');
-INSERT INTO `telefonos` VALUES (55557, 'vvvvvvvvvvvv');
-INSERT INTO `telefonos` VALUES (55560, '545453355');
-INSERT INTO `telefonos` VALUES (55561, 'gjjvgjvg');
-INSERT INTO `telefonos` VALUES (55563, '345235');
-INSERT INTO `telefonos` VALUES (55564, '232324135135');
-INSERT INTO `telefonos` VALUES (55565, '435634');
-INSERT INTO `telefonos` VALUES (55566, '345235');
-INSERT INTO `telefonos` VALUES (55567, '2342341243');
-INSERT INTO `telefonos` VALUES (55568, '234356');
+INSERT INTO `telefonos` VALUES (55600, '');
+INSERT INTO `telefonos` VALUES (55601, 'No tiene');
+INSERT INTO `telefonos` VALUES (55602, '875402155');
+INSERT INTO `telefonos` VALUES (55603, '1111111');
+INSERT INTO `telefonos` VALUES (55604, 'No tiene');
+INSERT INTO `telefonos` VALUES (55605, '57447776');
 
 -- ----------------------------
 -- Table structure for tipo_compra
@@ -526,34 +340,24 @@ INSERT INTO `tipo_venta` VALUES (2, 'Contado');
 -- ----------------------------
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario`  (
-  `ID_Usuario` int(2) NOT NULL AUTO_INCREMENT,
+  `ID_Usuario` int(11) NOT NULL AUTO_INCREMENT,
   `Nombre_Usuario` varchar(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `Clave` varchar(12) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`ID_Usuario`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 24 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+  `primer_nombre` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `primer_apellido` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `email` varchar(150) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `tipo` varchar(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`ID_Usuario`) USING BTREE,
+  UNIQUE INDEX `Nombre_Usuario`(`Nombre_Usuario`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of usuario
 -- ----------------------------
-INSERT INTO `usuario` VALUES (1, 'Jester', '1234');
-INSERT INTO `usuario` VALUES (2, 'Jesterws', 'Jester2$d');
-INSERT INTO `usuario` VALUES (3, 'Jesterws', 'Jester2$d');
-INSERT INTO `usuario` VALUES (4, 'Jesterlopez', 'J3$jdhjla');
-INSERT INTO `usuario` VALUES (5, 'JesterLopez', 'Jester2#j');
-INSERT INTO `usuario` VALUES (6, 'JesterLopezz', '1\"Jester');
-INSERT INTO `usuario` VALUES (8, 'Jester', 'Lopez1#h');
-INSERT INTO `usuario` VALUES (12, 'Jester', 'Lopez1#h');
-INSERT INTO `usuario` VALUES (13, 'Jester', 'Lopez12#');
-INSERT INTO `usuario` VALUES (14, 'bdfbd', '2!dasaDd');
-INSERT INTO `usuario` VALUES (15, 'terter', '1\"ghsFkj');
-INSERT INTO `usuario` VALUES (16, 'gdfgdfg', 'sdsfs1\"D');
-INSERT INTO `usuario` VALUES (17, 'gerger', 'jJ2#hdsdf');
-INSERT INTO `usuario` VALUES (18, 'Jester', 'Jester1\"');
-INSERT INTO `usuario` VALUES (19, 'Jester', 'Jeter1\"3');
-INSERT INTO `usuario` VALUES (20, 'Jestert', 'Jester6%');
-INSERT INTO `usuario` VALUES (21, 'asfasfas', 'Jeste3#e');
-INSERT INTO `usuario` VALUES (22, 'Jesterds', 'Jester1\"3');
-INSERT INTO `usuario` VALUES (23, 'holvert', 'Holvert2018$');
+INSERT INTO `usuario` VALUES (1, 'Jester', '1234', 'jester', 'lopez', 'comfinvvnhfvhfvh', 'Vendedor');
+INSERT INTO `usuario` VALUES (2, 'Holvert', '123456', 'Holvert', 'Perez', 'holvertperez@hotmail.com', 'Administrador');
+INSERT INTO `usuario` VALUES (3, 'holvert20', 'holvert1', 'holvert', 'talavera', 'pereshol13@gmail.com', 'vendedor');
+INSERT INTO `usuario` VALUES (4, 'josel', 'joseluis2', 'jose', 'valdivia', 'escorciav93@gmail.com', 'Vendedor');
 
 -- ----------------------------
 -- Table structure for ventas
@@ -561,70 +365,31 @@ INSERT INTO `usuario` VALUES (23, 'holvert', 'Holvert2018$');
 DROP TABLE IF EXISTS `ventas`;
 CREATE TABLE `ventas`  (
   `codigo_venta` int(11) NOT NULL AUTO_INCREMENT,
-  `fecha` datetime NULL DEFAULT NULL,
+  `fecha` datetime(0) NULL DEFAULT NULL,
   `precio_total` int(10) NULL DEFAULT NULL,
-  `fecha_pago` datetime NULL DEFAULT NULL,
-  PRIMARY KEY (`codigo_venta`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 96540 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+  `fecha_pago` datetime(0) NULL DEFAULT NULL,
+  `ID_Usuario` int(11) NULL DEFAULT NULL,
+  `id_desc` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`codigo_venta`) USING BTREE,
+  INDEX `fkusarioventa`(`ID_Usuario`) USING BTREE,
+  INDEX `fkdesc`(`id_desc`) USING BTREE,
+  CONSTRAINT `fkdesc` FOREIGN KEY (`id_desc`) REFERENCES `descuentos` (`id_desc`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `fkusarioventa` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`ID_Usuario`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of ventas
 -- ----------------------------
-INSERT INTO `ventas` VALUES (31557, '2018-11-20 16:22:37', 48, '2010-03-23 06:00:00');
-INSERT INTO `ventas` VALUES (36888, '2018-11-20 16:42:31', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (45558, '2018-11-20 16:23:13', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96488, '2018-11-20 16:46:51', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96489, '2018-11-20 17:15:27', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96490, '2018-11-20 17:23:41', 48, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96491, '2018-11-20 17:42:15', 45, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96492, '2018-11-20 17:50:53', 231, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96493, '2018-11-20 17:51:18', 231, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96494, '2018-11-20 18:52:25', 416, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96495, '2018-11-20 18:54:19', 16, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96496, '2018-11-20 19:03:34', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96497, '2018-11-20 19:03:50', 32, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96498, '2018-11-20 19:04:52', 272, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96499, '2018-11-20 19:06:51', 1728, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96500, '2018-11-20 20:04:16', 64, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96501, '2018-11-20 20:07:07', 48, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96502, '2018-11-20 20:08:44', 336, '2018-12-05 06:00:00');
-INSERT INTO `ventas` VALUES (96503, '2018-11-22 10:27:23', 32, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96504, '2018-11-22 10:30:48', 32, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96505, '2018-11-22 16:09:39', 160, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96506, '2018-11-22 16:09:58', 160, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96507, '2018-11-22 16:26:49', 160, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96508, '2018-11-22 16:29:48', 160, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96509, '2018-11-22 16:30:58', 160, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96510, '2018-11-22 16:34:53', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96511, '2018-11-22 16:37:06', 45, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96512, '2018-11-22 16:40:22', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96513, '2018-11-22 16:40:26', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96514, '2018-11-22 16:40:28', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96515, '2018-11-22 16:40:31', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96516, '2018-11-22 16:40:33', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96517, '2018-11-22 18:48:35', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96518, '2018-11-22 18:48:39', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96519, '2018-11-22 18:48:42', 60, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96520, '2018-11-22 18:48:50', 70, '2018-12-07 06:00:00');
-INSERT INTO `ventas` VALUES (96521, '2018-11-23 16:58:48', 60, '2018-12-08 06:00:00');
-INSERT INTO `ventas` VALUES (96522, '2018-11-23 16:59:05', 90, '2018-12-08 06:00:00');
-INSERT INTO `ventas` VALUES (96523, '2018-11-23 16:59:10', 90, '2018-12-08 06:00:00');
-INSERT INTO `ventas` VALUES (96524, '2018-11-23 17:18:03', 15, '2018-12-08 06:00:00');
-INSERT INTO `ventas` VALUES (96525, '2018-11-23 23:04:24', 90, '2018-12-08 06:00:00');
-INSERT INTO `ventas` VALUES (96526, '2018-11-24 09:27:20', 210, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96527, '2018-11-24 09:44:54', 110, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96528, '2018-11-24 09:46:11', 30, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96529, '2018-11-24 09:48:55', 10, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96530, '2018-11-24 09:51:01', 48, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96531, '2018-11-24 09:52:33', 48, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96532, '2018-11-24 09:54:20', 10, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96533, '2018-11-24 11:31:56', 40, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96534, '2018-11-24 11:48:35', 64, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96535, '2018-11-24 11:50:32', 30, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96536, '2018-11-24 11:53:37', 40, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96537, '2018-11-24 12:04:54', 120, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96538, '2018-11-24 12:06:14', 100, '2018-12-09 06:00:00');
-INSERT INTO `ventas` VALUES (96539, '2018-11-24 12:08:34', 20, '2018-12-09 06:00:00');
+INSERT INTO `ventas` VALUES (1, '2019-11-03 12:38:09', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (2, '2019-11-03 12:48:28', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (3, '2019-11-03 13:16:57', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (4, '2019-11-03 13:24:23', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (5, '2019-11-03 13:25:11', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (6, '2019-11-03 13:26:55', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (7, '2019-11-03 13:29:41', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (8, '2019-11-03 13:31:19', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (9, '2019-11-03 13:35:02', 1000, '2019-11-18 06:00:00', NULL, 1);
+INSERT INTO `ventas` VALUES (10, '2019-11-03 14:03:42', 3000, '2019-11-18 06:00:00', NULL, 1);
 
 -- ----------------------------
 -- Table structure for ventas_clientes_credito
@@ -642,28 +407,13 @@ CREATE TABLE `ventas_clientes_credito`  (
 -- ----------------------------
 -- Records of ventas_clientes_credito
 -- ----------------------------
-INSERT INTO `ventas_clientes_credito` VALUES (96524, '1');
-INSERT INTO `ventas_clientes_credito` VALUES (96531, '1');
-INSERT INTO `ventas_clientes_credito` VALUES (96538, '1');
-INSERT INTO `ventas_clientes_credito` VALUES (96490, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96495, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96496, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96497, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96498, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96499, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96500, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96501, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96505, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96506, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96521, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96522, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96523, '444445454');
-INSERT INTO `ventas_clientes_credito` VALUES (96532, '534-343646-34632');
-INSERT INTO `ventas_clientes_credito` VALUES (96491, 'kjhgsnjln');
-INSERT INTO `ventas_clientes_credito` VALUES (96493, 'kjhgsnjln');
-INSERT INTO `ventas_clientes_credito` VALUES (96494, 'kjhgsnjln');
-INSERT INTO `ventas_clientes_credito` VALUES (96502, 'kjhgsnjln');
-INSERT INTO `ventas_clientes_credito` VALUES (96539, 'kjhgsnjln');
+INSERT INTO `ventas_clientes_credito` VALUES (4, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (5, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (6, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (7, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (8, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (9, '161-261198-0001W');
+INSERT INTO `ventas_clientes_credito` VALUES (10, '161-261198-0001W');
 
 -- ----------------------------
 -- Table structure for ventas_tipo
@@ -681,85 +431,43 @@ CREATE TABLE `ventas_tipo`  (
 -- ----------------------------
 -- Records of ventas_tipo
 -- ----------------------------
-INSERT INTO `ventas_tipo` VALUES (96490, 1);
-INSERT INTO `ventas_tipo` VALUES (96491, 1);
-INSERT INTO `ventas_tipo` VALUES (96493, 1);
-INSERT INTO `ventas_tipo` VALUES (96494, 1);
-INSERT INTO `ventas_tipo` VALUES (96495, 1);
-INSERT INTO `ventas_tipo` VALUES (96496, 1);
-INSERT INTO `ventas_tipo` VALUES (96497, 1);
-INSERT INTO `ventas_tipo` VALUES (96498, 1);
-INSERT INTO `ventas_tipo` VALUES (96499, 1);
-INSERT INTO `ventas_tipo` VALUES (96500, 1);
-INSERT INTO `ventas_tipo` VALUES (96501, 1);
-INSERT INTO `ventas_tipo` VALUES (96502, 1);
-INSERT INTO `ventas_tipo` VALUES (96505, 1);
-INSERT INTO `ventas_tipo` VALUES (96506, 1);
-INSERT INTO `ventas_tipo` VALUES (96521, 1);
-INSERT INTO `ventas_tipo` VALUES (96522, 1);
-INSERT INTO `ventas_tipo` VALUES (96523, 1);
-INSERT INTO `ventas_tipo` VALUES (96524, 1);
-INSERT INTO `ventas_tipo` VALUES (96531, 1);
-INSERT INTO `ventas_tipo` VALUES (96532, 1);
-INSERT INTO `ventas_tipo` VALUES (96538, 1);
-INSERT INTO `ventas_tipo` VALUES (96539, 1);
-INSERT INTO `ventas_tipo` VALUES (31557, 2);
-INSERT INTO `ventas_tipo` VALUES (45558, 2);
-INSERT INTO `ventas_tipo` VALUES (96488, 2);
-INSERT INTO `ventas_tipo` VALUES (96489, 2);
-INSERT INTO `ventas_tipo` VALUES (96492, 2);
-INSERT INTO `ventas_tipo` VALUES (96503, 2);
-INSERT INTO `ventas_tipo` VALUES (96504, 2);
-INSERT INTO `ventas_tipo` VALUES (96507, 2);
-INSERT INTO `ventas_tipo` VALUES (96508, 2);
-INSERT INTO `ventas_tipo` VALUES (96509, 2);
-INSERT INTO `ventas_tipo` VALUES (96510, 2);
-INSERT INTO `ventas_tipo` VALUES (96511, 2);
-INSERT INTO `ventas_tipo` VALUES (96512, 2);
-INSERT INTO `ventas_tipo` VALUES (96513, 2);
-INSERT INTO `ventas_tipo` VALUES (96514, 2);
-INSERT INTO `ventas_tipo` VALUES (96515, 2);
-INSERT INTO `ventas_tipo` VALUES (96516, 2);
-INSERT INTO `ventas_tipo` VALUES (96517, 2);
-INSERT INTO `ventas_tipo` VALUES (96518, 2);
-INSERT INTO `ventas_tipo` VALUES (96519, 2);
-INSERT INTO `ventas_tipo` VALUES (96520, 2);
-INSERT INTO `ventas_tipo` VALUES (96525, 2);
-INSERT INTO `ventas_tipo` VALUES (96526, 2);
-INSERT INTO `ventas_tipo` VALUES (96527, 2);
-INSERT INTO `ventas_tipo` VALUES (96528, 2);
-INSERT INTO `ventas_tipo` VALUES (96529, 2);
-INSERT INTO `ventas_tipo` VALUES (96530, 2);
-INSERT INTO `ventas_tipo` VALUES (96533, 2);
-INSERT INTO `ventas_tipo` VALUES (96534, 2);
-INSERT INTO `ventas_tipo` VALUES (96535, 2);
-INSERT INTO `ventas_tipo` VALUES (96536, 2);
-INSERT INTO `ventas_tipo` VALUES (96537, 2);
+INSERT INTO `ventas_tipo` VALUES (1, 2);
+INSERT INTO `ventas_tipo` VALUES (2, 2);
+INSERT INTO `ventas_tipo` VALUES (3, 2);
+INSERT INTO `ventas_tipo` VALUES (4, 1);
+INSERT INTO `ventas_tipo` VALUES (5, 1);
+INSERT INTO `ventas_tipo` VALUES (6, 1);
+INSERT INTO `ventas_tipo` VALUES (7, 1);
+INSERT INTO `ventas_tipo` VALUES (8, 1);
+INSERT INTO `ventas_tipo` VALUES (9, 1);
+INSERT INTO `ventas_tipo` VALUES (10, 1);
 
 -- ----------------------------
 -- View structure for factura
 -- ----------------------------
 DROP VIEW IF EXISTS `factura`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `factura` AS SELECT ventas.codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,clientes_credito.cedula,nombre,apellido,direccion,tipo
-FROM producto,detalles_de_venta,ventas_clientes_credito,ventas,clientes_credito,tipo_venta,ventas_tipo
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `factura` AS SELECT ventas.codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,clientes_credito.cedula,nombre,apellido,direccion,tipo,(descuentos.porcenjate*ventas.precio_total) as descuento
+FROM producto,detalles_de_venta,ventas_clientes_credito,ventas,clientes_credito,tipo_venta,ventas_tipo,descuentos
 WHERE producto.codigo_producto=detalles_de_venta.codigo_producto
 AND detalles_de_venta.codigo_venta=ventas.codigo_venta
 AND ventas_clientes_credito.codigo_venta=ventas.codigo_venta
 AND clientes_credito.cedula=ventas_clientes_credito.cedula 
 AND ventas_tipo.codigo_tipoventa=tipo_venta.codigo_tipoventa
-AND ventas.codigo_venta=ventas_tipo.codigo_venta ;
+AND ventas.codigo_venta=ventas_tipo.codigo_venta 
+AND ventas.id_desc= descuentos.id_desc ;
 
 -- ----------------------------
 -- View structure for factura_contado
 -- ----------------------------
 DROP VIEW IF EXISTS `factura_contado`;
-CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `factura_contado` AS SELECT ventas.codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,tipo
-FROM producto,detalles_de_venta,ventas,tipo_venta,ventas_tipo
+CREATE ALGORITHM = UNDEFINED SQL SECURITY DEFINER VIEW `factura_contado` AS SELECT ventas.codigo_venta,descripcion,precio_unitario,cantidad,sub_total,fecha,tipo,(descuentos.porcenjate*ventas.precio_total) as descuento
+FROM producto,detalles_de_venta,ventas,tipo_venta,ventas_tipo,descuentos
 WHERE producto.codigo_producto=detalles_de_venta.codigo_producto
 AND detalles_de_venta.codigo_venta=ventas.codigo_venta
 AND ventas_tipo.codigo_tipoventa=tipo_venta.codigo_tipoventa
 AND ventas.codigo_venta=ventas_tipo.codigo_venta 
-AND ventas_tipo.codigo_tipoventa='2' ;
+AND ventas_tipo.codigo_tipoventa='2' 
+AND ventas.id_desc=descuentos.id_desc ;
 
 -- ----------------------------
 -- View structure for reporteventas
@@ -797,11 +505,11 @@ and ventas_clientes_credito.cedula = clientes_credito.cedula ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `Agregar_Usuario`;
 delimiter ;;
-CREATE PROCEDURE `Agregar_Usuario`(IN `pNombre_usuario` varchar(15),IN `pClave` varchar(12))
+CREATE PROCEDURE `Agregar_Usuario`(IN `pNombre_usuario` varchar(15),IN `pClave` varchar(12),IN `pnombre` varchar(100),IN `papellido` varchar(100),IN `pcargo` varchar(50),IN `pemail` varchar(150))
 BEGIN
 	#Routine body goes here...
-INSERT INTO usuario(Nombre_Usuario,Clave)
-VALUES(pNombre_usuario,pClave);
+INSERT INTO usuario(Nombre_Usuario,Clave,primer_nombre,primer_apellido,email,tipo)
+VALUES(pNombre_usuario,pClave,pnombre,papellido,pemail,pcargo);
 END
 ;;
 delimiter ;
@@ -897,10 +605,10 @@ delimiter ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `editarproducto`;
 delimiter ;;
-CREATE PROCEDURE `editarproducto`(IN `pcodigo` integer,IN `pdescripcion` varchar(30))
+CREATE PROCEDURE `editarproducto`(IN `pcodigo` integer,IN `pdescripcion` varchar(30),IN `pprecio` INTEGER(11))
 BEGIN
 	#Routine body goes here...
-UPDATE producto set producto.descripcion=pdescripcion
+UPDATE producto set producto.descripcion=pdescripcion,producto.precio_unitario=pprecio
 WHERE producto.codigo_producto=pcodigo;
 END
 ;;
@@ -1202,11 +910,11 @@ delimiter ;
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `nuevaventa`;
 delimiter ;;
-CREATE PROCEDURE `nuevaventa`(IN `pfecha` datetime,IN `pfecha_pago` datetime,IN `ppreciototal` integer)
+CREATE PROCEDURE `nuevaventa`(IN `pfecha` datetime,IN `pfecha_pago` datetime,IN `ppreciototal` integer,IN `pdesc` integer)
 BEGIN
 	#Routine body goes here...
 	DECLARE x INT;
-INSERT INTO ventas (fecha,precio_total) VALUES (pfecha,ppreciototal);
+INSERT INTO ventas (fecha,precio_total,id_desc) VALUES (pfecha,ppreciototal,pdesc);
 SELECT MAX(codigo_venta) into x from ventas;
 
 UPDATE ventas SET fecha_pago=pfecha_pago WHERE
@@ -1263,9 +971,10 @@ WHERE Nombre_Usuario = pUsuario
 and Clave=pClave;
 
 if pRes >0 THEN
-	SELECT ID_usuario INTO pRes FROM usuario
+	SELECT ID_usuario into pRes FROM usuario
 WHERE Nombre_Usuario=pUsuario
 and Clave=pclave;
+
 	ELSE
 	SET pRes=0;
 end IF;
@@ -1293,6 +1002,27 @@ ELSE
 SET prespuesta='no';
 INSERT INTO producto(descripcion,precio_unitario,cantidad_existente) VALUES (pnombreproducto,pprecio,'0');
 END IF;
+END
+;;
+delimiter ;
+
+-- ----------------------------
+-- Procedure structure for Verificar_ExisteNUser
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `Verificar_ExisteNUser`;
+delimiter ;;
+CREATE PROCEDURE `Verificar_ExisteNUser`(IN `pnuser` varchar (15),OUT `pexiste` varchar (15))
+BEGIN
+	#Routine body goes here...
+	declare x int;
+SELECT COUNT(*) Nombre_Usuario into x from usuario
+WHERE pnuser=Nombre_Usuario;
+
+SELECT Nombre_Usuario  into pexiste from usuario
+WHERE pnuser=Nombre_Usuario;
+
+
+
 END
 ;;
 delimiter ;
